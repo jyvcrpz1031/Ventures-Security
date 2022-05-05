@@ -50,7 +50,7 @@ class Navigation extends React.Component {
     render () {
         const { menus, activeTab } = this.state;
         return (
-            <div className="navigation-bar">
+            <div className="navigation-bar fixed">
                 <div className='logo'>
                     <img src={`${process.env.PUBLIC_URL}/vsi-logo.png`} alt='vsi-logo'/>
                 </div>
