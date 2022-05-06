@@ -9,7 +9,7 @@ class ComponentLoader extends React.Component {
     render = () => {
         const { className, id, children } = this.props;
         return (
-            <div 
+            <div
                 className={className || ""}
                 id={id || ""}>
                     {children || null}
