@@ -1,0 +1,27 @@
+[
+    {
+        "pageName": "Home",
+        "redirect": "#home",
+        "id": "home"
+    },
+    {
+        "pageName": "About Us",
+        "redirect": "#aboutus",
+        "id": "aboutus"
+    },
+    {
+        "pageName": "Get Started",
+        "redirect": "#getstarted",
+        "id": "getstarted"
+    },
+    {
+        "pageName": "FAQS",
+        "redirect": "#faqs",
+        "id": "faqs"
+    },
+    {
+        "pageName": "Contact Us",
+        "redirect": "#contactus",
+        "id": "contactus"
+    }
+]

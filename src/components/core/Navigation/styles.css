@@ -1,8 +1,9 @@
 .navigation-bar {
-    position: relative;
     height: 70px;
     width: 100%;
     background: linear-gradient(#7B241C, #E53935);
+    z-index: 3;
+    overflow: hidden;
 }
 
 .logo {
@@ -32,6 +33,9 @@
 }
 
 @media screen and (max-width: 999px) {
+    .navigation-bar {
+        overflow: hidden;
+    }
     .navigation-bar .menu-icon {
         float: right;
         display: block;
@@ -52,6 +56,7 @@
       background-color:rgba(99, 99, 99, 0.8);
       display: block;
       transition: 0.5s ease-out;
+      z-index: 3;
     }
 
     .navigation-bar .close {

@@ -6,9 +6,7 @@ class ContactUs extends React.Component {
         super(props);
     }
 
-    componentDidMount = () => {
-        console.error(process.env);
-    }
+    componentDidMount = () => {}
 
     render () {
         return (
