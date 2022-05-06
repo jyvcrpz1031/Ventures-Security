@@ -1,0 +1,19 @@
+[
+    {
+        "id": "home",
+        "component": "Home",
+        "props": {
+            "header": "The Venture Advantage",
+            "infoText": "The Venture Securities, Inc. team is on hand to provide expert services to help fulfill your investment requirements. Launch the online application form so we can get more information about you and your objectives.",
+            "bg": "/stock-exchange.jpg"
+        }
+    },
+    {
+        "id": "contactus",
+        "component": "ContactUs",
+        "props": {
+            "header": "Test",
+            "infoText": "Test data"
+        }
+    }
+]
