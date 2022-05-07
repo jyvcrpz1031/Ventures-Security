@@ -11,7 +11,7 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="home-section bg-gradient-to-tr from-gray-900 to-blue-900 h-100 w-full relative">
+            <div className="home-section bg-gradient-to-tr from-gray-900 to-amber-800 h-100 w-full relative">
                 <img src={`${process.env.PUBLIC_URL}${this.props.bg}`} className="w-full h-full object-cover absolute mix-blend-overlay" />
                 <div className="content h-full w-full flex h-screen justify-center items-center">
                     <div className="header text-center">
