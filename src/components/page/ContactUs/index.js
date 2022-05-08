@@ -4,6 +4,9 @@ import './styles.css';
 class ContactUs extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+
+        }
     }
 
     componentDidMount = () => {}

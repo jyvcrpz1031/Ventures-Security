@@ -1,0 +1,39 @@
+.carousel-wrap {
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.carousel-scroll {
+    z-index: 1;
+    overflow: hidden;
+}
+
+.item-wrap {
+    transition: ease-in 0.5s;
+    left: 0;
+}
+
+.item {
+    width: 100%;
+    
+}
+
+.icon-next {
+    padding: 10px 0 15px;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    z-index: 2;
+}
+
+.icon-prev {
+    padding: 10px 0 15px;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    z-index: 2;
+}
+
+.icon-page {
+    z-index: 2;
+}

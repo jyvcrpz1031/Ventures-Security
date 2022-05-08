@@ -5,14 +5,17 @@ import "./styles.css";
 class Home extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+
+        }
     }
 
     componentDidMount = () => {}
 
     render() {
         return (
-            <div className="home-section bg-gradient-to-tr from-gray-900 to-blue-900 h-100 w-full relative">
-                <img src={`${process.env.PUBLIC_URL}${this.props.bg}`} className="w-full h-full object-cover absolute mix-blend-overlay" />
+            <div className="home-section bg-gradient-to-tr from-gray-900 to-amber-800 h-100 w-full relative">
+                <img alt="bg.jpg" src={`${process.env.PUBLIC_URL}${this.props.bg}`} className="w-full h-full object-cover absolute mix-blend-overlay" />
                 <div className="content h-full w-full flex h-screen justify-center items-center">
                     <div className="header text-center">
                         <h2 className="text-5xl md:text-6xl">{this.props.header}</h2>
