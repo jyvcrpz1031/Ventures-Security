@@ -19,7 +19,9 @@ class Home extends React.Component {
                 <div className="content h-full w-full flex h-screen justify-center items-center">
                     <div className="header text-center">
                         <h2 className="text-5xl md:text-6xl">{this.props.header}</h2>
-                        <Text className="venture-adv mt-10" text={this.props.infoText} />
+                        <Text className="venture-adv mt-10 md:text-2xl" text={this.props.infoText} />
+                        <Text className="venture-adv2 mb-[20px] md:text-2xl" text={this.props.infoText1} />
+                        <Text className="venture-adv3 md:text-2xl" text={this.props.infoText2} />
                     </div>
                 </div>
             </div>
