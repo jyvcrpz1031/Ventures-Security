@@ -1,10 +1,11 @@
 .home-section .header {
     color: white;
+    margin-top: 100px;
 }
 
 .home-section .venture-adv {
     height: 50%;
-    padding: 20px 20% 20%;
+    padding: 20px 20%;
     color: white;
     display: block;
 }
