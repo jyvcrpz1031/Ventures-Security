@@ -5,6 +5,8 @@
         "props": {
             "header": "The Venture Advantage",
             "infoText": "The Venture Securities, Inc. team is on hand to provide expert services to help fulfill your investment requirements. Launch the online application form so we can get more information about you and your objectives.",
+            "infoText1": "Personalized Broker Assisted Trading",
+            "infoText2": "Competitive Commission Rates",
             "bg": "/stock-exchange.jpg"
         }
     },
