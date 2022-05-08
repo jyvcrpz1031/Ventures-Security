@@ -1,10 +1,8 @@
-import { data } from 'autoprefixer';
 import React from 'react';
 import './styles.css';
-import { ChevronLeft, ChevronRight, HorizontalRule } from '@mui/icons-material';
+import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 
 let timer = null;
-let isPlaying = false;
 let direction = -1;
 
 class Carousel extends React.Component {
@@ -13,12 +11,6 @@ class Carousel extends React.Component {
         this.state = {
             data: []
         }
-    }
-
-    startSlide = () => {
-        setTimeout(() => {
-            this.startSlide();
-        }, this.props.animationSpeed);
     }
 
     componentDidMount = () => {
