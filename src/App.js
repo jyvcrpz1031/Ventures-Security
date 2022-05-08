@@ -1,4 +1,4 @@
-import { Navigation, ContactUs } from './components';
+import { Navigation} from './components';
 import RenderPages from './route';
 import './App.css';
 
