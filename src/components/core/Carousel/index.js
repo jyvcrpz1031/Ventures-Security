@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import { ChevronLeft, ChevronRight } from '@mui/icons-material';
+// import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 
 let timer = null;
 let direction = -1;
@@ -122,16 +122,16 @@ class Carousel extends React.Component {
             <div className={`carousel-wrap ${this.props.className}`}>
                 <div className='carousel-scroll py-[25px] relative'>
                     <span className='icon-prev' onClick={this.prevSlide}>
-                        <ChevronLeft
+                        {/* <ChevronLeft
                             fontSize='large'
                             sx={{ fontSize: "70px", opacity: "0.1" }}
-                        />
+                        /> */}
                     </span>
                     <span className='icon-next' onClick={this.nextSlide}>
-                        <ChevronRight
+                        {/* <ChevronRight
                             fontSize='large'
                             sx={{ fontSize: "70px", opacity: "0.1" }}
-                        />
+                        /> */}
                     </span>
                     <div className='item-wrap flex flex-nowrap mx-auto'>
                         {this.state.data.map((item, i) => {
