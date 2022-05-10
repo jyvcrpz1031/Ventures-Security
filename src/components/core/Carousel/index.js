@@ -19,7 +19,10 @@ class Carousel extends React.Component {
                 data: [...this.props.children]
             })
         }
-        this.startSlide();
+        
+        if (this.props.autoSlide === true) {
+            this.startSlide();
+        }
     }
 
     startSlide = () => {
@@ -130,10 +133,7 @@ class Carousel extends React.Component {
             <div className={`carousel-wrap ${this.props.className}`}>
                 <div className='carousel-scroll py-[25px] relative'>
                     <span className='icon-prev' onClick={this.prevSlide}>
-                        <ChevronLeftIcon className='h-[100px] w-[100px] text-black-500 opacity-10' />
-                    </span>
-                    <span className='icon-next' onClick={this.nextSlide}>
-                        <ChevronRightIcon className='h-[100px] w-[100px] text-black-500 opacity-10' />
+                        <ChevronLeftIcon className='h-[65px] w-[65px] text-black-500 opacity-10' />
                     </span>
                     <div className='item-wrap flex flex-nowrap mx-auto'>
                         {this.state.data.map((item, i) => {
@@ -144,6 +144,9 @@ class Carousel extends React.Component {
                             )
                         })}
                     </div>
+                    <span className='icon-next' onClick={this.nextSlide}>
+                        <ChevronRightIcon className='h-[65px] w-[65px] text-black-500 opacity-10' />
+                    </span>
                 </div>
             </div>
         );
