@@ -1,22 +1,24 @@
 import React from 'react';
 import './styles.css';
-import { ChevronLeft, ChevronRight } from '@mui/icons-material';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 let timer = null;
-let direction = -1;
 
 class Carousel extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: [],
+            direction: -1
         }
     }
 
     componentDidMount = () => {
-        this.setState({
-            data: [...this.props.children]
-        })
+        if (this.state.data.length === 0) {
+            this.setState({
+                data: [...this.props.children]
+            })
+        }
         this.startSlide();
     }
 
@@ -29,7 +31,7 @@ class Carousel extends React.Component {
     nextSlide = () => {
         clearTimeout(timer);
 
-        const { data } = this.state;
+        const { data, direction } = this.state;
 
 
         const carouselWrap = document.querySelector(`.${this.props.className || '.carousel-wrap'} .item-wrap`);
@@ -47,7 +49,6 @@ class Carousel extends React.Component {
             carouselWrap.style.justifyContent = "flex-start";
         }
 
-        carouselWrap.style.justifyContent = "flex-start";
         carouselWrap.style.transform = "translate(-100%)";
 
         carouselWrap.addEventListener('transitionend', () => {
@@ -57,15 +58,20 @@ class Carousel extends React.Component {
                 carouselWrap.style.transition = "ease-in 0.5s";
             });
 
-            const firstItem = data[0];
+            if (direction === -1) {
+                const firstItem = data[0];
 
-            data.shift();
-            this.setState({
-                data: [...data, firstItem]
-            })
+                data.shift();
+                data.push(firstItem);
+                this.setState({
+                    data: [...data]
+                })
+            }
         })
 
-        direction = -1;
+        this.setState({
+            direction: -1
+        });
 
         this.startSlide();
     }
@@ -73,7 +79,7 @@ class Carousel extends React.Component {
     prevSlide = () => {
         clearTimeout(timer);
 
-        const { data } = this.state;
+        const { data, direction } = this.state;
 
         const carouselWrap = document.querySelector(`.${this.props.className || '.carousel-wrap'} .item-wrap`);
 
@@ -110,7 +116,9 @@ class Carousel extends React.Component {
             }
         })
 
-        direction = 1;
+        this.setState({
+            direction: 1
+        });
 
         this.startSlide();
     }
@@ -122,16 +130,10 @@ class Carousel extends React.Component {
             <div className={`carousel-wrap ${this.props.className}`}>
                 <div className='carousel-scroll py-[25px] relative'>
                     <span className='icon-prev' onClick={this.prevSlide}>
-                        <ChevronLeft
-                            fontSize='large'
-                            sx={{ fontSize: "70px", opacity: "0.1" }}
-                        />
+                        <ChevronLeftIcon className='h-[100px] w-[100px] text-black-500 opacity-10' />
                     </span>
                     <span className='icon-next' onClick={this.nextSlide}>
-                        <ChevronRight
-                            fontSize='large'
-                            sx={{ fontSize: "70px", opacity: "0.1" }}
-                        />
+                        <ChevronRightIcon className='h-[100px] w-[100px] text-black-500 opacity-10' />
                     </span>
                     <div className='item-wrap flex flex-nowrap mx-auto'>
                         {this.state.data.map((item, i) => {
