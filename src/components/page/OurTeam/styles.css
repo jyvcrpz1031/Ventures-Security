@@ -1,0 +1,323 @@
+.our-team-carousel .icon-next {
+    top: 0;
+}
+
+.our-team-carousel .icon-prev {
+    top: 0;
+}
+
+@media only screen and (min-width: 640px) {
+    /* Board of Directors */
+    .boardofdirectors .item0 {
+        grid-area: item1;
+    }
+
+    .boardofdirectors .item1 {
+        grid-area: item2;
+    }
+
+    .boardofdirectors .item2 {
+        grid-area: item3;
+    }
+
+    .boardofdirectors .item3 {
+        grid-area: item4;
+    }
+
+    .boardofdirectors .item4 {
+        grid-area: item5;
+    }
+
+    .boardofdirectors .item5 {
+        grid-area: item6;
+    }
+
+    .boardofdirectors .item6 {
+        grid-area: item7;
+    }
+
+    .boardofdirectors .item7 {
+        grid-area: item8;
+    }
+
+    .boardofdirectors .item8 {
+        grid-area: item9;
+    }
+
+    .boardofdirectors .grid-items {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            'item1 item1 item1 item2 item2 item2'
+            'item3 item3 item3 item4 item4 item4'
+            'item5 item5 item6 item6 item7 item7'
+            'item8 item8 item8 item9 item9 item9' !important;
+    }
+
+    .boardofdirectors .team-content {
+        margin: 0 auto
+    }
+
+    .boardofdirectors .item0 .team-content {
+        width: 55%;
+    }
+
+    .boardofdirectors .item1 .team-content {
+        width: 55%;
+    }
+
+    .boardofdirectors .item2 .team-content {
+        width: 55%;
+    }
+
+    .boardofdirectors .item3 .team-content {
+        width: 55%;
+    }
+
+    .boardofdirectors .item7 .team-content {
+        width: 55%;
+    }
+
+    .boardofdirectors .item8 .team-content {
+        width: 55%;
+    }
+
+    /* Management Team */
+    .managementteam .team-content {
+        margin: 0 auto;
+    }
+
+    .managementteam .item0 .team-content {
+        width: 55%;
+    }
+
+    .managementteam .item1 .team-content {
+        width: 55%;
+    }
+
+    .managementteam .item2 .team-content {
+        width: 55%;
+    }
+
+    .managementteam .item3 .team-content {
+        width: 55%;
+    }
+
+    .managementteam .item7 .team-content {
+        width: 55%;
+    }
+
+    .managementteam .item8 .team-content {
+        width: 55%;
+    }
+
+    .managementteam .item0 {
+        grid-area: item1;
+    }
+    .managementteam .item1 {
+        grid-area: item2;
+    }
+    .managementteam .item2 {
+        grid-area: item3;
+    }
+    .managementteam .item3 {
+        grid-area: item4;
+    }
+    .managementteam .item4 {
+        grid-area: item5;
+    }
+    .managementteam .item5 {
+        grid-area: item6;
+    }
+    .managementteam .item6 {
+        grid-area: item7;
+    }
+
+    .managementteam .grid-items {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            'item1 item1 item1 item2 item2 item2'
+            'item3 item3 item4 item4 item5 item5'
+            'item6 item6 item6 item7 item7 item7' !important;
+    }
+
+    /* Trading Personnel */
+    .tradingpersonnel .grid-items {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    .tradingpersonnel .team-content {
+        width: 85% !important;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .boardofdirectors .item0 .team-content {
+        width: 55%;
+    }
+
+    .boardofdirectors .item1 .team-content {
+        width: 55%;
+    }
+
+    .boardofdirectors .item2 .team-content {
+        width: 55%;
+    }
+
+    .boardofdirectors .item3 .team-content {
+        width: 55%;
+    }
+
+    .boardofdirectors .item4 .team-content {
+        width: 85%;
+    }
+
+    .boardofdirectors .item5 .team-content {
+        width: 85%;
+    }
+
+    .boardofdirectors .item6 .team-content {
+        width: 85%;
+    }
+
+    .boardofdirectors .item7 .team-content {
+        width: 55%;
+    }
+
+    .boardofdirectors .item8 .team-content {
+        width: 55%;
+    }
+
+    /* Management */
+    .managementteam .item0 .team-content {
+        width: 55%;
+    }
+
+    .managementteam .item1 .team-content {
+        width: 55%;
+    }
+
+    .managementteam .item2 .team-content {
+        width: 85%;
+    }
+
+    .managementteam .item3 .team-content {
+        width: 85%;
+    }
+
+    .managementteam .item4 .team-content {
+        width: 85%;
+    }
+
+    .managementteam .item5 .team-content {
+        width: 55%;
+    }
+
+    .managementteam .item6 .team-content {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 640px) {
+    .boardofdirectors .item0 .team-content {
+        width: 65%;
+    }
+
+    .boardofdirectors .item1 .team-content {
+        width: 65%;
+    }
+
+    .boardofdirectors .item2 .team-content {
+        width: 65%;
+    }
+
+    .boardofdirectors .item3 .team-content {
+        width: 65%;
+    }
+
+    .boardofdirectors .item4 .team-content {
+        width: 95%;
+    }
+
+    .boardofdirectors .item5 .team-content {
+        width: 95%;
+    }
+
+    .boardofdirectors .item6 .team-content {
+        width: 95%;
+    }
+
+    .boardofdirectors .item7 .team-content {
+        width: 65%;
+    }
+
+    .boardofdirectors .item8 .team-content {
+        width: 65%;
+    }
+
+    /* Management */
+    .managementteam .item0 .team-content {
+        width: 65%;
+    }
+
+    .managementteam .item1 .team-content {
+        width: 65%;
+    }
+
+    .managementteam .item2 .team-content {
+        width: 95%;
+    }
+
+    .managementteam .item3 .team-content {
+        width: 95%;
+    }
+
+    .managementteam .item4 .team-content {
+        width: 95%;
+    }
+
+    .managementteam .item5 .team-content {
+        width: 65%;
+    }
+
+    .managementteam .item6 .team-content {
+        width: 65%;
+    }
+
+    /* Trading */ 
+    .tradingpersonnel .item0 .team-content {
+        width: 95% !important;
+    }
+
+    .tradingpersonnel .item1 .team-content {
+        width: 95% !important;
+    }
+
+    .tradingpersonnel .item2 .team-content {
+        width: 95% !important;
+    }
+} 
+
+@media only screen and (max-width: 639px) {
+    .team-content {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .team-content img {
+        height: 18rem !important;
+    }
+
+    .team-content .sub-text {
+        height: 25px !important;
+    }
+
+    .see-more-box {
+        display: block !important;
+    }
+}
