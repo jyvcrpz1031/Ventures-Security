@@ -1,0 +1,7 @@
+.see-more-btn {
+    background: linear-gradient(#7B241C, #E53935);
+}
+
+.see-more-btn:hover {
+    background: white;
+}
