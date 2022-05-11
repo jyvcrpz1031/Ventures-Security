@@ -12,75 +12,85 @@ class GetStarted extends React.Component {
   render(props) {
     return (
       <div className="get-started">
-        <h1>Get Started</h1>
+        <h1 className="get-started-header">Get Started</h1>
         {/* Individual Joint */}
-        <div>
-          <h1>Individual Joint</h1>
-          <p>Open an Individual or Joint Account</p>
+        <div className="get-started-container">
+          <div className="individual-joint-container">
+            <h1 className="individual-joint-header">Individual Joint</h1>
+            <p className="individual-joint-subheader">
+              Open an Individual or Joint Account
+            </p>
 
-          <p>1. Download, print, fill out and sign the following:</p>
+            <p className="numbered-item">
+              1. Download, print, fill out and sign the following:
+            </p>
 
-          {/* Note */}
-          <div className="note-container">
-            <p>*Note:</p>
-            <span className="note-desc">
-              To help the government fight money laundering activities, the
-              Anti-Money Laundering Act, as amended, requires all covered
-              institutions to obtain, verify and record information that
-              identifies each person who opens an account.
-            </span>
-            <span className="note-desc">
-              What this means for you: When you open an account, we will ask for
-              your name, address, date of birth, business, TIN, SSS or GSIS Nos.
-              and other information that will allow us to identify you. We may
-              also ask to see your driver’s license, passport or other competent
-              evidence of identity bearing your photograph and signature.
-            </span>
+            {/* Note */}
+            <div className="note-container">
+              <p>*Note:</p>
+              <span className="note-desc">
+                To help the government fight money laundering activities, the
+                Anti-Money Laundering Act, as amended, requires all covered
+                institutions to obtain, verify and record information that
+                identifies each person who opens an account.
+              </span>
+              <span className="note-desc">
+                What this means for you: When you open an account, we will ask
+                for your name, address, date of birth, business, TIN, SSS or
+                GSIS Nos. and other information that will allow us to identify
+                you. We may also ask to see your driver’s license, passport or
+                other competent evidence of identity bearing your photograph and
+                signature.
+              </span>
+            </div>
+
+            {/* Photocopy */}
+
+            <p className="numbered-item">2. Photocopy requirements</p>
+
+            <p className="numbered-item">
+              3. Bring the requirements personally to our office at 8/F STI
+              Holdings Center, 6764 Ayala Avenue, Makati City
+            </p>
           </div>
 
-          {/* Photocopy */}
+          {/* Corporate */}
+          <div className="corporate-container">
+            <h1 className="corporate-header">Corporate</h1>
+            <p className="corporate-subheader">Open a Corporate Account</p>
 
-          <p>2. Photocopy requirements</p>
+            <p className="numbered-item">
+              1. Download, print, fill out and sign the following:
+            </p>
 
-          <p>
-            3. Bring the requirements personally to our office at 8/F STI
-            Holdings Center, 6764 Ayala Avenue, Makati City
-          </p>
-        </div>
+            {/* Note */}
+            <div className="note-container">
+              <p>*Note:</p>
+              <span className="note-desc">
+                To help the government fight money laundering activities, the
+                Anti-Money Laundering Act, as amended, requires all covered
+                institutions to obtain, verify and record information that
+                identifies each person who opens an account.
+              </span>
+              <span className="note-desc">
+                What this means for you: When you open an account, we will ask
+                for your name, address, date of birth, business, TIN, SSS or
+                GSIS Nos. and other information that will allow us to identify
+                you. We may also ask to see your driver’s license, passport or
+                other competent evidence of identity bearing your photograph and
+                signature.
+              </span>
+            </div>
 
-        {/* Corporate */}
-        <div>
-          <h1>Corporate</h1>
-          <p>Open a Corporate Account</p>
+            {/* Photocopy */}
 
-          <p>1. Download, print, fill out and sign the following:</p>
+            <p className="numbered-item">2. Prepare additional requirements</p>
 
-          {/* Note */}
-          <div className="note-container">
-            <p>*Note:</p>
-            <span className="note-desc">
-              To help the government fight money laundering activities, the
-              Anti-Money Laundering Act, as amended, requires all covered
-              institutions to obtain, verify and record information that
-              identifies each person who opens an account.
-            </span>
-            <span className="note-desc">
-              What this means for you: When you open an account, we will ask for
-              your name, address, date of birth, business, TIN, SSS or GSIS Nos.
-              and other information that will allow us to identify you. We may
-              also ask to see your driver’s license, passport or other competent
-              evidence of identity bearing your photograph and signature.
-            </span>
+            <p className="numbered-item">
+              3. Bring the requirements personally to our office at 8/F STI
+              Holdings Center, 6764 Ayala Avenue, Makati City
+            </p>
           </div>
-
-          {/* Photocopy */}
-
-          <p>2. Prepare additional requirements</p>
-
-          <p>
-            3. Bring the requirements personally to our office at 8/F STI
-            Holdings Center, 6764 Ayala Avenue, Makati City
-          </p>
         </div>
       </div>
     );

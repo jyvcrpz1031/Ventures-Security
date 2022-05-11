@@ -65,5 +65,126 @@
         }
       }
     }
+  },
+  {
+    "id": "outteam",
+    "component": "OurTeam",
+    "props": {
+      "data": [
+        {
+          "id": "boardofdirectors",
+          "title": "Board of Directors",
+          "list": [
+            {
+              "image": "/OurTeam/eusebio-h.png",
+              "mainText": "Eusebio H. Tanco",
+              "subText": "Chairman"
+            },
+            {
+              "image": "/OurTeam/wilfred-s.png",
+              "mainText": "Wilfred S. Racadio",
+              "subText": "President"
+            },
+            {
+              "image": "/OurTeam/yolanda-m.png",
+              "mainText": "Yolanda M. Bautista",
+              "subText": "Treasurer"
+            },
+            {
+              "image": "/OurTeam/cabrera-a.png",
+              "mainText": "Arsenio C. Cabrera",
+              "subText": "Corporate Secretary"
+            },
+            {
+              "image": "/OurTeam/agustin-j.png",
+              "mainText": "Joseph Augustin L. Tanco",
+              "subText": "Director"
+            },
+            {
+              "image": "/OurTeam/bautista-p.png",
+              "mainText": "Paolo Martin M. Bautista",
+              "subText": "Director"
+            },
+            {
+              "image": "/OurTeam/tanco-m.png",
+              "mainText": "Martin K. Tanco",
+              "subText": "Director"
+            },
+            {
+              "image": "/OurTeam/parker-s.png",
+              "mainText": "Stanley Parker Uy-Ong",
+              "subText": "Independent Director"
+            },
+            {
+              "image": "/OurTeam/lumen-f.png",
+              "mainText": "Francisco D. Lumen",
+              "subText": "Independent Director"
+            }
+          ]
+        },
+        {
+          "id": "managementteam",
+          "title": "Management Team",
+          "list": [
+            {
+              "image": "/OurTeam/eusebio-h.png",
+              "mainText": "Eusebio H. Tanco",
+              "subText": "Chairman"
+            },
+            {
+              "image": "/OurTeam/wilfred-s.png",
+              "mainText": "Wilfred S. Racadio",
+              "subText": "President"
+            },
+            {
+              "image": "/OurTeam/cabrera-a.png",
+              "mainText": "Arsenio C. Cabrera",
+              "subText": "Corporate Secretary"
+            },
+            {
+              "image": "/OurTeam/yolanda-m.png",
+              "mainText": "Yolanda M. Bautista",
+              "subText": "Treasurer"
+            },
+            {
+              "image": "/OurTeam/gonzales-r.png",
+              "mainText": "Regina Tanco-Gonzales",
+              "subText": "Authorized Signatory"
+            },
+            {
+              "image": "/OurTeam/aguilar-a.png",
+              "mainText": "Adora M. Aguilar",
+              "subText": "Associated Person"
+            },
+            {
+              "image": "/OurTeam/mosenabre-t.png",
+              "mainText": "Teresita B. Mosenabre",
+              "subText": "Settlement Head"
+            }
+          ]
+        },
+        {
+          "id": "tradingpersonnel",
+          "title": "Trading Personnel",
+          "list": [
+            {
+              "image": "/OurTeam/nebrida-s.jpg",
+              "mainText": "Shirley E. Nebrida",
+              "subText": "Sales and Marketing Head"
+            },
+            {
+              "image": "/OurTeam/romanes-e.png",
+              "mainText": "Erwin M. Romanes",
+              "subText": "Licensed Salesman"
+            },
+            {
+              "image": "/OurTeam/latumbo-g.png",
+              "mainText": "Gerry C. Latumbo",
+              "subText": "Licensed Salesman"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
