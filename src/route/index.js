@@ -21,7 +21,7 @@ class RenderPages extends React.Component {
                 });
             })
             .catch(err => {
-                console.error("NANDE?? ", err)
+                console.error("Fetch >> urlPages >> Error", err)
             })
     }
 

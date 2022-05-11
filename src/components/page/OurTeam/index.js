@@ -6,17 +6,37 @@ class OurTeam extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeTab: "boardofdirectors"
+            activeTab: "boardofdirectors",
+            noOfItems: 0
         }
     }
 
     componentDidMount = () => {
+        this.checkNoOfItemsToDisplay();
     }
 
     changeTab = (tab) => {
         this.setState({
             activeTab: tab
-        })
+        });
+        this.checkNoOfItemsToDisplay();
+    }
+
+    checkNoOfItemsToDisplay = () => {
+        let items = null;
+        if (window.innerWidth < 640) {
+            items = 3;
+        }
+        
+        this.setState({ noOfItems: items });
+    }
+
+    handleResize = () => {
+        this.checkNoOfItemsToDisplay();
+    }
+
+    showAllList = () => {
+        this.setState({ noOfItems: null });
     }
 
     render() {
@@ -46,7 +66,14 @@ class OurTeam extends React.Component {
                 {this.props.data.map((item, i) => {
                     return (
                         item.id === activeTab ? (
-                            <Card key={i} className={`our-team-list ${item.id}`} data={item.list} />
+                            <Card 
+                                key={i} 
+                                showAllList={this.showAllList} 
+                                className={`our-team-list ${item.id}`} 
+                                handleResize={this.handleResize} 
+                                data={item.list} 
+                                noOfItems={this.state.noOfItems} 
+                            />
                         ) : null
                     )
                 })}
