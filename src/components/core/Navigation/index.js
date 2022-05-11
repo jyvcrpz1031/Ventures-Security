@@ -25,6 +25,11 @@ class Navigation extends React.Component {
             })
     }
 
+    scrollToComp = (id) => {
+      const element = document.getElementById(`${id}`).offsetTop - 70;
+      window.scrollTo({ top: element, behavior: 'smooth' })
+    }
+
     componentDidMount = () => {
         this.fetchNavs();
     }
@@ -44,12 +49,14 @@ class Navigation extends React.Component {
                 </div>
                 <div className={`nav-tabs ${this.state.navToggle ? 'open' : 'close'}`}>
                     {menus.map(menu => {
-                        return <a
+                        return <span
                             key={menu.id}
-                            href={menu.redirect}
                             className={activeTab === menu.id ? 'active' : ''}
-                            onClick={this.toggleNav}
-                        >{menu.pageName}</a>
+                            onClick={() => {
+                                this.scrollToComp(menu.id);
+                                this.toggleNav();
+                            }}
+                        >{menu.pageName}</span>
                     })}
                 </div>
                 <span className='menu-icon' onClick={this.toggleNav}>
