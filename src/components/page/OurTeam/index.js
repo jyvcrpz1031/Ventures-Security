@@ -12,6 +12,7 @@ class OurTeam extends React.Component {
     }
 
     componentDidMount = () => {
+        console.error("mount called");
         this.checkNoOfItemsToDisplay();
     }
 
@@ -32,10 +33,12 @@ class OurTeam extends React.Component {
     }
 
     handleResize = () => {
+        console.error("resize called");
         this.checkNoOfItemsToDisplay();
     }
 
     showAllList = () => {
+        console.error("Show called");
         this.setState({ noOfItems: null });
     }
 
