@@ -17,7 +17,7 @@
     margin: 24px 20px 0 0;
 }
 
-.navigation-bar .nav-tabs a {
+.navigation-bar .nav-tabs span {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -67,7 +67,7 @@
         right: -20px;
     }
 
-    .navigation-bar .nav-tabs a {
+    .navigation-bar .nav-tabs span {
         color: #fff;
       float: none;
       display: block;

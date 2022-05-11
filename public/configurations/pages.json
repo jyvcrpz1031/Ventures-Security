@@ -158,7 +158,17 @@
                 }
             ]
         }
-    }, {
+    },
+    {
+        "id": "contactus",
+        "component": "ContactUs",
+        "props": {
+            "serviceId": "service_fj2ibi7",
+            "publicId": "Dy8g88_EJ6kGDE-nM",
+            "templateId": "template_yw53gx4"
+        }
+    },
+    {
         "id": "footer",
         "component": "Footer",
         "props": {
