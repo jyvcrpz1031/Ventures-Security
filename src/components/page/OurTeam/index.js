@@ -7,12 +7,15 @@ class OurTeam extends React.Component {
         super(props);
         this.state = {
             activeTab: "boardofdirectors",
-            noOfItems: 0
+            noOfItems: 0,
+            currWidth: null
         }
     }
 
     componentDidMount = () => {
-        console.error("mount called");
+        this.setState({
+            currWidth: window.innerWidth
+        })
         this.checkNoOfItemsToDisplay();
     }
 
@@ -24,21 +27,24 @@ class OurTeam extends React.Component {
     }
 
     checkNoOfItemsToDisplay = () => {
-        let items = null;
-        if (window.innerWidth < 640) {
-            items = 3;
-        }
-        
-        this.setState({ noOfItems: items });
+            let items = null;
+            if (window.innerWidth < 640) {
+                items = 3;
+            }
+
+            this.setState({ noOfItems: items });
     }
 
     handleResize = () => {
-        console.error("resize called");
-        this.checkNoOfItemsToDisplay();
+        if (window.innerWidth !== this.state.currWidth) {
+            this.checkNoOfItemsToDisplay();
+            this.setState({
+                currWidth: window.innerWidth
+            }) 
+        }
     }
 
     showAllList = () => {
-        console.error("Show called");
         this.setState({ noOfItems: null });
     }
 
@@ -69,13 +75,13 @@ class OurTeam extends React.Component {
                 {this.props.data.map((item, i) => {
                     return (
                         item.id === activeTab ? (
-                            <Card 
-                                key={i} 
-                                showAllList={this.showAllList} 
-                                className={`our-team-list ${item.id}`} 
-                                handleResize={this.handleResize} 
-                                data={item.list} 
-                                noOfItems={this.state.noOfItems} 
+                            <Card
+                                key={i}
+                                showAllList={this.showAllList}
+                                className={`our-team-list ${item.id}`}
+                                handleResize={this.handleResize}
+                                data={item.list}
+                                noOfItems={this.state.noOfItems}
                             />
                         ) : null
                     )
