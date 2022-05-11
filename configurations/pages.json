@@ -158,5 +158,12 @@
                 }
             ]
         }
+    }, {
+        "id": "footer",
+        "component": "Footer",
+        "props": {
+            "text": "© 2021 Venture Securities, Inc.",
+            "icon": ""
+        }
     }
 ]
