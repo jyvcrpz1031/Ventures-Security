@@ -109,9 +109,9 @@ class ContactUs extends React.Component {
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3861.7347871315224!2d121.02480788844183!3d14.557153133646374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdfb49914c6c868db!2sGROW%20Vite%20Staffing%20Services%20Inc.!5e0!3m2!1sen!2sph!4v1652266728809!5m2!1sen!2sph"
                                 height="450"
                                 style={{ border: '0', borderRadius: '5px' }}
-                                allowfullscreen=""
+                                allowFullScreen=""
                                 loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
+                                referrerPolicy="no-referrer-when-downgrade"
                                 className="w-[100%] my-1"
                             />
                         </div>
