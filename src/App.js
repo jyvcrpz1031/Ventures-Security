@@ -1,4 +1,5 @@
-import { Navigation} from './components';
+import { Navigation } from './components/core';
+import { Terms } from './components/page';
 import RenderPages from './route';
 import './App.css';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navigation />
       <RenderPages />
+      <Terms />
     </div>
   );
 }

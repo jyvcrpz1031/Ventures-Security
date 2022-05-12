@@ -39,7 +39,7 @@
         }
     },
     {
-        "id": "outteam",
+        "id": "ourteam",
         "component": "OurTeam",
         "props": {
             "data": [
