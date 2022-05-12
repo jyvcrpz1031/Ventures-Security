@@ -37,7 +37,7 @@ function Card(props) {
                 </div>
                 {props.data.length > props.noOfItems && props.noOfItems ? (
                     <div className='see-more-box hidden'>
-                        <button onClick={props.showAllList} className='see-more-btn font-semibold mt-10 px-10 py-3 mb-10 rounded-3xl text-white border-2 border-white hover:text-black hover:bg-white hover:border-2 hover:border-black transition duration-300 ease-in uppercase'>See More</button>
+                        <button onClick={props.showAllList} className='see-more-btn text-sm font-semibold mt-10 px-10 py-3 mb-10 rounded-2xl text-white border-2 border-white hover:text-black hover:bg-white hover:border-2 hover:border-black transition duration-300 ease-in uppercase'>See More</button>
                     </div>
                 ) : null}
             </div>

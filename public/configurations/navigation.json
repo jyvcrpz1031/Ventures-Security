@@ -15,6 +15,11 @@
         "id": "getstarted"
     },
     {
+        "pageName": "Our Team",
+        "redirect": "#ourteam",
+        "id": "ourteam"
+    },
+    {
         "pageName": "FAQS",
         "redirect": "#faqs",
         "id": "faqs"

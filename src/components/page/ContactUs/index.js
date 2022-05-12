@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import { Input } from '../../core';
+import { Input, Modal } from '../../core';
 import { PhoneIcon, MailIcon } from '@heroicons/react/solid';
 import emailjs from '@emailjs/browser';
 
@@ -10,54 +10,87 @@ class ContactUs extends React.Component {
         this.state = {
             name: {
                 value: "",
+                errors: null
             },
             email: {
-                value: ""
+                value: "",
+                errors: null
             },
             message: {
-                value: ""
-            }
+                value: "",
+                errors: null
+            },
+            successModal: true
         }
     }
 
     componentDidMount = () => { }
 
-    nameChange = (value) => {
+    validateName = (value) => {
+        let error = null;
+        if (value.length === 0) {
+            error = "Name cannot be blank"
+        }
+
         this.setState({
             name: {
-                value: value
+                value: value,
+                errors: error
             }
-        })
+        });
     }
 
-    emailChange = (value) => {
-        this.setState({
-            email: {
-                value: value
-            }
-        })
-    }
+    validateMessage = (value) => {
+        let error = null;
+        if (value.length === 0) {
+            error = "Message cannot be blank"
+        }
 
-    messageChange = (value) => {
         this.setState({
             message: {
-                value: value
+                value: value,
+                errors: error
             }
-        })
+        });
     }
+
+    validateEmail = (value) => {
+        let error = null;
+        let check = /\S+@\S+\.\S+/;
+        if (value.length === 0) {
+            error = "Email cannot be blank";
+        } else if (!check.test(value)) {
+            error = "Email is not valid";
+        } else {
+            error = null
+        }
+
+        this.setState({
+            email: {
+                value: value,
+                errors: error
+            }
+        });
+    };
 
     sendMessage = (e) => {
         e.preventDefault();
+        Promise.all([
+            this.validateName(this.state.name.value),
+            this.validateEmail(this.state.email.value),
+            this.validateMessage(this.state.message.value)
+        ]).then(() => {
+            if (!this.state.name.errors && !this.state.email.errors && !this.state.message.errors) {
+                emailjs.sendForm(this.props.serviceId, this.props.templateId, '#eForm', this.props.publicId)
+                    .then(res => {
+                        console.error(res);
+                    })
+                    .catch(error => {
+                        console.error(error);
+                    })
+            }
+        })
 
-        console.error(this.props.publicId);
-
-        emailjs.sendForm(this.props.serviceId, this.props.templateId, '#eForm', this.props.publicId)
-            .then(res => {
-                console.error(res);
-            })
-            .catch(error => {
-                console.error(error);
-            })
     }
 
     render() {
@@ -76,7 +109,8 @@ class ContactUs extends React.Component {
                                             name="name"
                                             value={this.state.name.value}
                                             required={true}
-                                            onInput={ev => this.nameChange(ev.target.value)}
+                                            errors={this.state.name.errors}
+                                            onInput={ev => this.validateName(ev.target.value)}
                                         />
                                     </div>
                                     <div>
@@ -86,7 +120,8 @@ class ContactUs extends React.Component {
                                             name="email"
                                             value={this.state.email.value}
                                             required={true}
-                                            onInput={ev => this.emailChange(ev.target.value)}
+                                            errors={this.state.email.errors}
+                                            onInput={ev => this.validateEmail(ev.target.value)}
                                         />
                                     </div>
                                     <div>
@@ -97,10 +132,11 @@ class ContactUs extends React.Component {
                                             rows="4"
                                             value={this.state.message.value}
                                             required={true}
-                                            onInput={ev => this.messageChange(ev.target.value)}
+                                            errors={this.state.message.errors}
+                                            onInput={ev => this.validateMessage(ev.target.value)}
                                         />
                                     </div>
-                                    <button onClick={this.sendMessage} className='submit-btn text-white font-semibold h-[40px] w-[150px] rounded-3xl text-white border-1 border-white hover:text-black hover:bg-white hover:border-1 hover:border-black transition duration-300 ease-in uppercase rounded-lg mx-auto'>Send Message</button>
+                                    <button onClick={this.sendMessage} className='submit-btn text-sm text-white font-semibold h-[40px] w-[150px] rounded-lg text-white border-1 border-white hover:text-black hover:bg-white hover:border-1 hover:border-black transition duration-300 ease-in uppercase rounded-xl mx-auto'>Send Message</button>
                                 </form>
                             </div>
                         </div>

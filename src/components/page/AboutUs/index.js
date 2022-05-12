@@ -13,8 +13,8 @@ class ContactUs extends React.Component {
     }
 
     render() {
-        if (this.props.data === 0) {
-            return 
+        if (this.props.data.length === 0) {
+            return null;
         }
         
         return (

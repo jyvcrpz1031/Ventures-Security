@@ -3,7 +3,7 @@ import "./styles.css";
 function Input(props) {
     const label = props.label || '';
     return (
-        <div className={`input-text ${props.className || ""}`}>
+        <div className={`input-text text-left ${props.className || ""}`}>
             {label ?
                 <div className="text-left mb-3 text-sm">
                     <label className="text-black" htmlFor={label}>
@@ -30,7 +30,7 @@ function Input(props) {
                     onBlur={props.onBlur}
                     onFocus={props.onFocus}
                     autoCapitalize="false"
-                    className={`ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 ${props.className || ''}`}
+                    className={`ring-1 ring-gray-300 ${props.errors === null ? "" : "ring-red-500"} appearance-none w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 ${props.className || ''}`}
                 />
             ) : props.type === 'email' ? (
                 <input
@@ -56,7 +56,7 @@ function Input(props) {
                     onBlur={props.onBlur}
                     onFocus={props.onFocus}
                     autoCapitalize="false"
-                    className={`ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 ${props.className || ''}`}
+                    className={`ring-1 ring-gray-300 ${props.errors === null ? "" : "ring-red-500"} appearance-none w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 ${props.className || ''}`}
                 />
             ) : props.type === 'number' ? (
                 <input
@@ -82,7 +82,7 @@ function Input(props) {
                     onBlur={props.onBlur}
                     onFocus={props.onFocus}
                     autoCapitalize="false"
-                    className={`ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 ${props.className || ''}`}
+                    className={`ring-1 ring-gray-300 ${props.errors === null ? "" : "ring-red-500"} appearance-none w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 ${props.className || ''}`}
                 />
             ) : (
                 <input
@@ -108,10 +108,10 @@ function Input(props) {
                     onBlur={props.onBlur}
                     onFocus={props.onFocus}
                     autoCapitalize="false"
-                    className={`ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 ${props.className || ''}`}
+                    className={`ring-1 ring-gray-300 ${props.errors === null ? "" : "ring-red-500"} appearance-none w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 ${props.className || ''}`}
                 />
             )}
-
+            <span className={`error-msg text-xs text-red-500 ${props.errors === null ? "hidden" : ""}`}>{props.errors}</span>
         </div>
     );
 }
