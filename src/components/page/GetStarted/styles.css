@@ -69,3 +69,13 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.individual-download-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.individual-download {
+  color: #0000ff;
+  font-weight: bold;
+}

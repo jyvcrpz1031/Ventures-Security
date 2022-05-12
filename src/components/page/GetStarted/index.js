@@ -4,12 +4,50 @@ import "./styles.css";
 class GetStarted extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      individualJoint: [
+        {
+          description: "a. Customer Account Information Form (CAIF)",
+          link: "public/CAIF_Individual-front.pdf",
+        },
+        {
+          description: "b. Trading Agreement (Terms and Conditions)",
+          link: "public/VSI-Trading-Agreement-Individual.pdf",
+        },
+        {
+          description: "c. Two (2) Specimen Signature Cards",
+          link: "public/Signature-Card-Individual.pdf",
+        },
+        {
+          description: "d. Client Consent Form (Data Privacy Act):",
+          link: "",
+        },
+      ],
+      corporate: [
+        {
+          description: "a. Corporate Account Information Form (CAIF)",
+          link: "public/CAIF_Corporate-Account.pdf",
+        },
+        {
+          description: "b. Trading Agreement (Terms and Conditions)",
+          link: "public/VSI-Trading-Agreement-Individual.pdf",
+        },
+        {
+          description:
+            "c. Two (2) Specimen Signature Cards verified by the Corporate Secretary",
+          link: "public/Signature-Card-Corporate.pdf",
+        },
+        {
+          description: "d. Client Consent Form (Data Privacy Act):",
+          link: "",
+        },
+      ],
+    };
   }
 
   componentDidMount = () => {};
 
-  render(props) {
+  render(props, state) {
     return (
       <div className="get-started">
         <h1 className="get-started-header">Get Started</h1>
@@ -24,6 +62,20 @@ class GetStarted extends React.Component {
             <p className="numbered-item">
               1. Download, print, fill out and sign the following:
             </p>
+
+            {this.state?.individualJoint?.map((data) => {
+              return (
+                <div className="individual-download-container">
+                  <a
+                    className="individual-download"
+                    href={data?.link}
+                    download={data?.link}
+                  >
+                    {data?.description}
+                  </a>
+                </div>
+              );
+            })}
 
             {/* Note */}
             <div className="note-container">
@@ -62,6 +114,20 @@ class GetStarted extends React.Component {
             <p className="numbered-item">
               1. Download, print, fill out and sign the following:
             </p>
+
+            {this.state?.corporate?.map((data) => {
+              return (
+                <div className="individual-download-container">
+                  <a
+                    className="individual-download"
+                    href={data?.link}
+                    download={data?.link}
+                  >
+                    {data?.description}
+                  </a>
+                </div>
+              );
+            })}
 
             {/* Note */}
             <div className="note-container">
