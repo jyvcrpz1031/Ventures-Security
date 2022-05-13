@@ -1,3 +1,12 @@
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .home-section .header {
     color: white;
     margin-top: 30px;
@@ -15,6 +24,10 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(17, 24, 39, 0.8), rgba(146, 64, 14, 0.4));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(184, 72, 3, 0.6));
     left: 0;
+}
+
+.content {
+    animation: 1s ease-out 0s 1 slideFromBottom;
 }

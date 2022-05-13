@@ -100,7 +100,7 @@ class ContactUs extends React.Component {
                     <div className='contact-content relative z-[3]'>
                         <h1 className='text-3xl px-4 pt-4 font-semibold text-white'>Contact Us</h1>
                         <hr className='w-[50px] m-auto mt-3 mb-3 bg-white border-0 h-[1px]' />
-                        <div className='flex flex-col md:bg-white md:w-[80%] lg:w-[60%] md:px-1 md:flex-row space-y-2 md:space-y-0 text-black mx-auto rounded-lg'>
+                        <div className='contact-body flex flex-col md:bg-white md:w-[80%] lg:w-[60%] md:px-1 md:flex-row space-y-2 md:space-y-0 text-black mx-auto rounded-lg'>
                             <div className='contact-form md:pb-2 pt-2 pb-2 p-8 md:p-0 w-[100%] md:w-[500px] lg:w-[50%]'>
                                 <div className='bg-white rounded-xl p-8 pb-8 md:pb-1 text-gray-600'>
                                     <form id='eForm' className='flex flex-col space-y-5'>
