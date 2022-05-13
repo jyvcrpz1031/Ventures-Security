@@ -1,10 +1,20 @@
 .main-content {
     top: 0;
     overflow: auto;
-    background-image: url(../../public/stock-exchange.jpg);
-    background-size: cover;
+}
+
+.main-content:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    /* needed to keep in the background */
+    background: url(../../public/stock-exchange.jpg) center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
 }
-
