@@ -96,64 +96,66 @@ class ContactUs extends React.Component {
     render() {
         return (
             <>
-                <div className="contact-us pb-[60px]">
-                    <h1 className='text-3xl px-4 pt-4 font-semibold text-white'>Contact Us</h1>
-                    <hr className='w-[50px] m-auto mt-3 mb-3 bg-white border-0 h-[1px]' />
-                    <div className='flex flex-col md:bg-white md:w-[80%] lg:w-[60%] md:px-1 md:flex-row space-y-2 md:space-y-0 text-black mx-auto rounded-lg'>
-                        <div className='contact-form md:pb-2 pt-2 pb-2 p-8 md:p-0 w-[100%] md:w-[500px] lg:w-[50%]'>
-                            <div className='bg-white rounded-xl p-8 pb-8 md:pb-1 text-gray-600'>
-                                <form id='eForm' className='flex flex-col space-y-5'>
-                                    <div>
-                                        <Input
-                                            label={'Your Name'}
-                                            name="name"
-                                            value={this.state.name.value}
-                                            required={true}
-                                            errors={this.state.name.errors}
-                                            onInput={ev => this.validateName(ev.target.value)}
-                                        />
-                                    </div>
-                                    <div>
-                                        <Input
-                                            label={'Email Address'}
-                                            type="email"
-                                            name="email"
-                                            value={this.state.email.value}
-                                            required={true}
-                                            errors={this.state.email.errors}
-                                            onInput={ev => this.validateEmail(ev.target.value)}
-                                        />
-                                    </div>
-                                    <div>
-                                        <Input
-                                            label={'Message'}
-                                            type="textarea"
-                                            name="message"
-                                            rows="4"
-                                            value={this.state.message.value}
-                                            required={true}
-                                            errors={this.state.message.errors}
-                                            onInput={ev => this.validateMessage(ev.target.value)}
-                                        />
-                                    </div>
-                                    <button onClick={this.sendMessage} className='submit-btn text-sm text-white font-semibold h-[40px] w-[150px] rounded-lg text-white border-1 border-white hover:text-black hover:bg-white hover:border-1 hover:border-black transition duration-300 ease-in uppercase rounded-xl mx-auto'>Send Message</button>
-                                </form>
+                <div className="contact-us pb-[60px] relative">
+                    <div className='contact-content relative z-[3]'>
+                        <h1 className='text-3xl px-4 pt-4 font-semibold text-white'>Contact Us</h1>
+                        <hr className='w-[50px] m-auto mt-3 mb-3 bg-white border-0 h-[1px]' />
+                        <div className='flex flex-col md:bg-white md:w-[80%] lg:w-[60%] md:px-1 md:flex-row space-y-2 md:space-y-0 text-black mx-auto rounded-lg'>
+                            <div className='contact-form md:pb-2 pt-2 pb-2 p-8 md:p-0 w-[100%] md:w-[500px] lg:w-[50%]'>
+                                <div className='bg-white rounded-xl p-8 pb-8 md:pb-1 text-gray-600'>
+                                    <form id='eForm' className='flex flex-col space-y-5'>
+                                        <div>
+                                            <Input
+                                                label={'Your Name'}
+                                                name="name"
+                                                value={this.state.name.value}
+                                                required={true}
+                                                errors={this.state.name.errors}
+                                                onInput={ev => this.validateName(ev.target.value)}
+                                            />
+                                        </div>
+                                        <div>
+                                            <Input
+                                                label={'Email Address'}
+                                                type="email"
+                                                name="email"
+                                                value={this.state.email.value}
+                                                required={true}
+                                                errors={this.state.email.errors}
+                                                onInput={ev => this.validateEmail(ev.target.value)}
+                                            />
+                                        </div>
+                                        <div>
+                                            <Input
+                                                label={'Message'}
+                                                type="textarea"
+                                                name="message"
+                                                rows="4"
+                                                value={this.state.message.value}
+                                                required={true}
+                                                errors={this.state.message.errors}
+                                                onInput={ev => this.validateMessage(ev.target.value)}
+                                            />
+                                        </div>
+                                        <button onClick={this.sendMessage} className='submit-btn text-sm text-white font-semibold h-[40px] w-[150px] rounded-lg text-white border-1 border-white hover:text-black hover:bg-white hover:border-1 hover:border-black transition duration-300 ease-in uppercase rounded-xl mx-auto'>Send Message</button>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                        <div className='location-map p-8 pb-1 pt-1 md:p-0 md:w-[500px] lg:w-[50%]'>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3861.7347871315224!2d121.02480788844183!3d14.557153133646374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdfb49914c6c868db!2sGROW%20Vite%20Staffing%20Services%20Inc.!5e0!3m2!1sen!2sph!4v1652266728809!5m2!1sen!2sph"
-                                height="450"
-                                style={{ border: '0', borderRadius: '5px' }}
-                                allowFullScreen=""
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                className="w-[100%] my-1"
-                            />
+                            <div className='location-map p-8 pb-1 pt-1 md:p-0 md:w-[500px] lg:w-[50%]'>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3861.7347871315224!2d121.02480788844183!3d14.557153133646374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdfb49914c6c868db!2sGROW%20Vite%20Staffing%20Services%20Inc.!5e0!3m2!1sen!2sph!4v1652266728809!5m2!1sen!2sph"
+                                    height="450"
+                                    style={{ border: '0', borderRadius: '5px' }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    className="w-[100%] my-1"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className='contact-numbers md:flex md:flex-col w-full md:h-[120px] py-10 justify-center items-center'>
+                <div className='contact-numbers bg-white md:flex md:flex-col w-full md:h-[120px] py-10 justify-center items-center'>
                     <h1 className='flex md:hidden font-semibold pl-5 pb-3'>Email Address</h1>
                     <div className='email-addresses flex flex-col md:flex-row pl-5'>
                         <div className='flex p-2'>

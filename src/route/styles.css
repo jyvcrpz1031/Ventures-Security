@@ -1,5 +1,6 @@
 .main-content {
     top: 0;
     overflow: auto;
+    background-image: url(../../public/stock-exchange.jpg);
 }
 
