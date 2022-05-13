@@ -69,7 +69,7 @@ class RenderPages extends React.Component {
 
     render = () => {
         return (
-            <div className="main-content h-full w-full">
+            <div className="main-content">
                 {this.renderPage()}
             </div>
         );

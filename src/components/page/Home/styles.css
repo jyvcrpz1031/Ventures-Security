@@ -10,11 +10,7 @@
     display: block;
 }
 
-.home-section {
-    background: transparent;
-}
-
-.content:before {
+.home-section:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -22,8 +18,4 @@
     background: linear-gradient(to right, rgba(17, 24, 39, 1), rgba(146, 64, 14, 1));
     left: 0;
     mix-blend-mode: hard-light;
-}
-
-.contact-content {
-    z-index: 3;
 }

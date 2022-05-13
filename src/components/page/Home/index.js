@@ -15,8 +15,9 @@ class Home extends React.Component {
     render() {
         return (
             <div className="home-section h-100 w-full relative">
-                <div className="content z-[4] h-full w-full flex h-[845px] md:h-[1000px] justify-center items-center">
-                    <div className="header z-[1] text-center">
+                <img alt="bg.jpg" src={`${process.env.PUBLIC_URL}${this.props.bg}`} className="w-full h-full object-cover fixed z-[-1]" />
+                <div className="content h-full w-full flex h-screen justify-center items-center">
+                    <div className="header z-[3] text-center">
                         <h2 className="text-5xl md:text-6xl">{this.props.header}</h2>
                         <Text className="venture-adv mt-10 md:text-xl" text={this.props.infoText} />
                         <Text className="venture-adv2 mb-[20px] md:text-xl" text={this.props.infoText1} />

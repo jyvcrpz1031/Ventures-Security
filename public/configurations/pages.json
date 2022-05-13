@@ -211,7 +211,8 @@
       "props": {
           "serviceId": "service_fj2ibi7",
           "publicId": "Dy8g88_EJ6kGDE-nM",
-          "templateId": "template_yw53gx4"
+          "templateId": "template_yw53gx4",
+          "bg": "/bg1.jpg"
       }
   },
   {
