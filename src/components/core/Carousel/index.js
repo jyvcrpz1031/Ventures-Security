@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+// import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 let timer = null;

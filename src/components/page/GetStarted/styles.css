@@ -1,0 +1,83 @@
+.get-started {
+  text-align: left;
+  margin: 20px;
+}
+
+
+.get-started-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started-header {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin: 20px;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.individual-joint-container {
+ margin-bottom: 50px;
+ width: 48%;
+ min-width: 350px;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ padding: 20px;
+ margin: 5px;
+ border-radius: 20px;
+}
+
+.individual-joint-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.individual-joint-subheader {
+  margin-bottom: 20px;
+}
+
+.note-container {
+  font-weight: bold;
+}
+
+.note-desc {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.corporate-container {
+  margin-bottom: 50px;
+  width: 48%;
+  min-width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.corporate-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.corporate-subheader {
+  margin-bottom: 20px;
+}
+
+.numbered-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.individual-download-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.individual-download {
+  color: #0000ff;
+  font-weight: bold;
+}
