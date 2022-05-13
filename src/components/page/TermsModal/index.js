@@ -45,7 +45,7 @@ class TermsModal extends React.Component {
                 <Modal className={modalOpen ? "block" : "hidden"}>
                     <div className="modal-header relative border-b border-slate-400 pb-5 text-left">
                         <Text className="text-base md:text-lg font-semibold sm:mr-10" text={terms.title}/>
-                        <span className="hover:bg-gray-300 rounded-md h-[20px] w-[20px] absolute top-1 right-0">
+                        <span onClick={this.closeModal} className="hover:bg-gray-300 rounded-md h-[20px] w-[20px] absolute top-1 right-0">
                             <XIcon className='h-[20px] w-[20px] hidden sm:block text-gray-600' />
                         </span>
                     </div>
