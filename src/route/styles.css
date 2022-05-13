@@ -12,10 +12,10 @@
     right:0;
     z-index:-1; /* needed to keep in the background */
     background: url(../../public/stock-exchange.jpg) center center;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
 }
 
 
