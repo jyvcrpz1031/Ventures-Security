@@ -6,7 +6,7 @@
     top: 0;
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 640px) {
     /* Board of Directors */
     .boardofdirectors .item0 {
         grid-area: item1;
@@ -223,9 +223,89 @@
     }
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 640px) {
+    .boardofdirectors .item0 .team-content {
+        width: 65%;
+    }
+
+    .boardofdirectors .item1 .team-content {
+        width: 65%;
+    }
+
+    .boardofdirectors .item2 .team-content {
+        width: 65%;
+    }
+
+    .boardofdirectors .item3 .team-content {
+        width: 65%;
+    }
+
+    .boardofdirectors .item4 .team-content {
+        width: 95%;
+    }
+
+    .boardofdirectors .item5 .team-content {
+        width: 95%;
+    }
+
+    .boardofdirectors .item6 .team-content {
+        width: 95%;
+    }
+
+    .boardofdirectors .item7 .team-content {
+        width: 65%;
+    }
+
+    .boardofdirectors .item8 .team-content {
+        width: 65%;
+    }
+
+    /* Management */
+    .managementteam .item0 .team-content {
+        width: 65%;
+    }
+
+    .managementteam .item1 .team-content {
+        width: 65%;
+    }
+
+    .managementteam .item2 .team-content {
+        width: 95%;
+    }
+
+    .managementteam .item3 .team-content {
+        width: 95%;
+    }
+
+    .managementteam .item4 .team-content {
+        width: 95%;
+    }
+
+    .managementteam .item5 .team-content {
+        width: 65%;
+    }
+
+    .managementteam .item6 .team-content {
+        width: 65%;
+    }
+
+    /* Trading */ 
+    .tradingpersonnel .item0 .team-content {
+        width: 95% !important;
+    }
+
+    .tradingpersonnel .item1 .team-content {
+        width: 95% !important;
+    }
+
+    .tradingpersonnel .item2 .team-content {
+        width: 95% !important;
+    }
+} 
+
 @media only screen and (max-width: 639px) {
     .team-content {
-        width: 68% !important;
+        width: 250px;
         margin: 0 auto;
     }
 
@@ -235,5 +315,9 @@
 
     .team-content .sub-text {
         height: 25px !important;
+    }
+
+    .see-more-box {
+        display: block !important;
     }
 }

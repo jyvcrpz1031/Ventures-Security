@@ -6,17 +6,46 @@ class OurTeam extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeTab: "boardofdirectors"
+            activeTab: "boardofdirectors",
+            noOfItems: 0,
+            currWidth: null
         }
     }
 
     componentDidMount = () => {
+        this.setState({
+            currWidth: window.innerWidth
+        })
+        this.checkNoOfItemsToDisplay();
     }
 
     changeTab = (tab) => {
         this.setState({
             activeTab: tab
-        })
+        });
+        this.checkNoOfItemsToDisplay();
+    }
+
+    checkNoOfItemsToDisplay = () => {
+            let items = null;
+            if (window.innerWidth < 640) {
+                items = 3;
+            }
+
+            this.setState({ noOfItems: items });
+    }
+
+    handleResize = () => {
+        if (window.innerWidth !== this.state.currWidth) {
+            this.checkNoOfItemsToDisplay();
+            this.setState({
+                currWidth: window.innerWidth
+            }) 
+        }
+    }
+
+    showAllList = () => {
+        this.setState({ noOfItems: null });
     }
 
     render() {
@@ -27,7 +56,7 @@ class OurTeam extends React.Component {
         }
 
         return (
-            <div className="our-team whitespace-pre-line mt-12">
+            <div className="our-team whitespace-pre-line mt-12 pt-5">
                 <div className="text-center items-center justify-center">
                     <h1 className="text-3xl md:text-3xl font-semibold">Our Team</h1>
                     <hr className='w-[50px] m-auto mt-3 bg-black border-0 h-[1px]' />
@@ -46,7 +75,14 @@ class OurTeam extends React.Component {
                 {this.props.data.map((item, i) => {
                     return (
                         item.id === activeTab ? (
-                            <Card key={i} className={`our-team-list ${item.id}`} data={item.list} />
+                            <Card
+                                key={i}
+                                showAllList={this.showAllList}
+                                className={`our-team-list ${item.id}`}
+                                handleResize={this.handleResize}
+                                data={item.list}
+                                noOfItems={this.state.noOfItems}
+                            />
                         ) : null
                     )
                 })}

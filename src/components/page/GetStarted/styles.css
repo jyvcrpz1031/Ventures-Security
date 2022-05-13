@@ -12,10 +12,12 @@
 }
 
 .get-started-header {
-  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
   margin: 20px;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .individual-joint-container {

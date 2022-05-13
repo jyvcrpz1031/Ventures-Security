@@ -51,6 +51,7 @@ class GetStarted extends React.Component {
     return (
       <div className="get-started">
         <h1 className="get-started-header">Get Started</h1>
+        <hr className='w-[50px] m-auto mt-3 mb-3 bg-black border-0 h-[1px]' />
         {/* Individual Joint */}
         <div className="get-started-container">
           <div className="individual-joint-container">

@@ -1,0 +1,12 @@
+.contact-us {
+    background: linear-gradient(#E53935, #7B241C);
+}
+
+.submit-btn {
+    background: #92291f;
+}
+
+.submit-btn:hover {
+    background: white;
+    border: 1px solid black;
+}
