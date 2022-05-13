@@ -56,7 +56,7 @@ class OurTeam extends React.Component {
         }
 
         return (
-            <div className="our-team whitespace-pre-line mt-12 pt-5">
+            <div className="our-team whitespace-pre-line pt-12 bg-white">
                 <div className="text-center items-center justify-center">
                     <h1 className="text-3xl md:text-3xl font-semibold">Our Team</h1>
                     <hr className='w-[50px] m-auto mt-3 bg-black border-0 h-[1px]' />

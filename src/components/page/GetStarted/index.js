@@ -45,11 +45,11 @@ class GetStarted extends React.Component {
     };
   }
 
-  componentDidMount = () => {};
+  componentDidMount = () => { };
 
   render(props, state) {
     return (
-      <div className="get-started">
+      <div className="get-started bg-white">
         <h1 className="get-started-header">Get Started</h1>
         <hr className='w-[50px] m-auto mt-3 mb-3 bg-black border-0 h-[1px]' />
         {/* Individual Joint */}
@@ -64,10 +64,11 @@ class GetStarted extends React.Component {
               1. Download, print, fill out and sign the following:
             </p>
 
-            {this.state?.individualJoint?.map((data) => {
+            {this.state?.individualJoint?.map((data, i) => {
               return (
                 <div className="individual-download-container">
                   <a
+                    key={i}
                     className="individual-download"
                     href={data?.link}
                     download={data?.link}
@@ -116,10 +117,11 @@ class GetStarted extends React.Component {
               1. Download, print, fill out and sign the following:
             </p>
 
-            {this.state?.corporate?.map((data) => {
+            {this.state?.corporate?.map((data, i) => {
               return (
                 <div className="individual-download-container">
                   <a
+                    key={i}
                     className="individual-download"
                     href={data?.link}
                     download={data?.link}

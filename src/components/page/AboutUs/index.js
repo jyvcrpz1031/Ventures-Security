@@ -18,7 +18,7 @@ class ContactUs extends React.Component {
         }
         
         return (
-            <div className="about-us whitespace-pre-line">
+            <div className="about-us whitespace-pre-line bg-white">
                 <Carousel className="about-carousel" animationSpeed={6000} autoSlide={true}>
                     {this.props.data.map((item, i) => {
                         return (
