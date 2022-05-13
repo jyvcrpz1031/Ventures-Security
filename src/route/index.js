@@ -69,7 +69,7 @@ class RenderPages extends React.Component {
 
     render = () => {
         return (
-            <div className="main-content h-full w-full bg-no-repeat bg-cover bg-fixed bg-center">
+            <div className="main-content h-full w-full bg-no-repeat bg-fixed bg-center">
                 {this.renderPage()}
             </div>
         );

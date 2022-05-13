@@ -1,6 +1,10 @@
 .main-content {
     top: 0;
-    overflow: hidden;
+    overflow: auto;
     background-image: url(../../public/stock-exchange.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
