@@ -1,15 +1,16 @@
 import React from 'react';
 import './styles.css';
+// import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 let timer = null;
+let direction = -1;
 
 class Carousel extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: [],
-            direction: -1
+            data: []
         }
     }
 
@@ -34,7 +35,7 @@ class Carousel extends React.Component {
     nextSlide = () => {
         clearTimeout(timer);
 
-        const { data, direction } = this.state;
+        const { data } = this.state;
 
 
         const carouselWrap = document.querySelector(`.${this.props.className || '.carousel-wrap'} .item-wrap`);
@@ -72,9 +73,7 @@ class Carousel extends React.Component {
             }
         })
 
-        this.setState({
-            direction: -1
-        });
+        direction = -1;
 
         this.startSlide();
     }
@@ -82,7 +81,7 @@ class Carousel extends React.Component {
     prevSlide = () => {
         clearTimeout(timer);
 
-        const { data, direction } = this.state;
+        const { data } = this.state;
 
         const carouselWrap = document.querySelector(`.${this.props.className || '.carousel-wrap'} .item-wrap`);
 
@@ -119,9 +118,7 @@ class Carousel extends React.Component {
             }
         })
 
-        this.setState({
-            direction: 1
-        });
+        direction = 1;
 
         this.startSlide();
     }

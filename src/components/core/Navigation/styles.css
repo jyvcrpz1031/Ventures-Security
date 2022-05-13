@@ -2,7 +2,7 @@
     height: 70px;
     width: 100%;
     background: linear-gradient(#7B241C, #E53935);
-    z-index: 3;
+    z-index: 10;
     overflow: hidden;
 }
 
@@ -26,6 +26,7 @@
     font-weight: 600;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 }
 
 .navigation-bar .menu-icon {
