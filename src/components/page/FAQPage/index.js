@@ -44,9 +44,9 @@ class FAQPage extends React.Component {
           <h2 className="faq-list-header">Help Center</h2>
 
           <div className="question-list">
-            {this.state.questions?.map(({ question, answer }) => {
+            {this.state.questions?.map(({ question, answer }, i) => {
               return (
-                <div className="question-item">
+                <div key={i} className="question-item">
                   <h1 className="question-item-header">{question}</h1>
                   <span className="question-item-span">{answer}</span>
                 </div>
