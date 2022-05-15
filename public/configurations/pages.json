@@ -42,6 +42,7 @@
     "id": "getstarted",
     "component": "GetStarted",
     "props": {
+      "bg": "/workbg.jpg",
       "data": {
         "downloadables": {
           "individualJoint": [

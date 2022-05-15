@@ -21,17 +21,42 @@ class Navigation extends React.Component {
                 });
             })
             .catch(err => {
-                console.error("NANDE?? ", err)
+                console.error("Fetch Error >> Navigation >> ", err)
             })
     }
 
     scrollToComp = (id) => {
-      const element = document.getElementById(`${id}`).offsetTop - 70;
-      window.scrollTo({ top: element, behavior: 'smooth' })
+        this.updateActiveTab(id);
+        const element = document.getElementById(`${id}`);
+        window.scrollTo({ top: element.offsetTop - 70, behavior: 'smooth' });
+
+        setTimeout(() => {
+            window.addEventListener('scroll', this.getActiveTab);
+        }, 1000);
+    }
+
+    updateActiveTab = (id) => {
+        this.setState({
+            activeTab: id,
+        })
+    }
+
+    getActiveTab = () => {
+        const links = document.querySelectorAll('.links');
+        const sections = document.querySelectorAll('.section');
+
+        let index = sections.length;
+        while (--index && window.scrollY + 70 < sections[index].offsetTop) { }
+
+        this.setState({
+            activeTab: links[index].classList[0]
+        }); 
+
     }
 
     componentDidMount = () => {
         this.fetchNavs();
+        window.addEventListener('scroll', this.getActiveTab);
     }
 
     toggleNav = () => {
@@ -51,8 +76,9 @@ class Navigation extends React.Component {
                     {menus.map(menu => {
                         return <span
                             key={menu.id}
-                            className={activeTab === menu.id ? 'active' : ''}
+                            className={`${menu.id} links ${activeTab === menu.id ? 'active' : ''}`}
                             onClick={() => {
+                                window.removeEventListener('scroll', this.getActiveTab);
                                 this.scrollToComp(menu.id);
                                 this.toggleNav();
                             }}
