@@ -57,12 +57,12 @@ class OurTeam extends React.Component {
 
         return (
             <div className="our-team whitespace-pre-line pt-12 bg-white">
-                <div className="text-center items-center justify-center">
+                <div data-aos="fade-down" data-aos-once="true" className="text-center items-center justify-center">
                     <h1 className="text-3xl md:text-3xl font-semibold">Our Team</h1>
                     <hr className='w-[50px] m-auto mt-3 bg-black border-0 h-[1px]' />
                 </div>
 
-                <ul className='flex justify-center items-center mt-4 text-lg'>
+                <ul data-aos="zoom-in" data-aos-once="true" className='flex justify-center items-center mt-4 text-lg'>
                     {this.props.data.map((item, i) => {
                         return (
                             <li className='mx-3' key={i}>

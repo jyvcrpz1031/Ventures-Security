@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles.css';
-// import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 let timer = null;
@@ -127,7 +126,7 @@ class Carousel extends React.Component {
 
     render() {
         return (
-            <div className={`carousel-wrap ${this.props.className}`}>
+            <div data-aos="fade-up" data-aos-once="true" className={`carousel-wrap ${this.props.className}`}>
                 <div className='carousel-scroll py-[25px] relative'>
                     <span className='icon-prev' onClick={this.prevSlide}>
                         <ChevronLeftIcon className='h-[65px] w-[65px] text-black-500 opacity-10' />
