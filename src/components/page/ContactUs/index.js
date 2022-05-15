@@ -100,7 +100,7 @@ class ContactUs extends React.Component {
                     <div className='contact-content relative z-[3]'>
                         <h1 className='text-3xl px-4 pt-4 font-semibold text-white'>Contact Us</h1>
                         <hr className='w-[50px] m-auto mt-3 mb-3 bg-white border-0 h-[1px]' />
-                        <div className='contact-body flex flex-col md:bg-white md:w-[80%] lg:w-[60%] md:px-1 md:flex-row space-y-2 md:space-y-0 text-black mx-auto rounded-lg'>
+                        <div data-aos="flip-left" data-aos-duration="1000" data-aos-once="true" className='contact-body flex flex-col md:bg-white md:w-[80%] lg:w-[60%] md:px-1 md:flex-row space-y-2 md:space-y-0 text-black mx-auto rounded-lg'>
                             <div className='contact-form md:pb-2 pt-2 pb-2 p-8 md:p-0 w-[100%] md:w-[500px] lg:w-[50%]'>
                                 <div className='bg-white rounded-xl p-8 pb-8 md:pb-1 text-gray-600'>
                                     <form id='eForm' className='flex flex-col space-y-5'>
@@ -155,35 +155,37 @@ class ContactUs extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className='contact-numbers bg-white md:flex md:flex-col w-full md:h-[120px] py-10 justify-center items-center'>
-                    <h1 className='flex md:hidden font-semibold pl-5 pb-3'>Email Address</h1>
-                    <div className='email-addresses flex flex-col md:flex-row pl-5'>
-                        <div className='flex p-2'>
-                            <MailIcon className='h-[20px] w-[20px]' />
-                            <a className="pl-2 text-sm" href="mailto:abc@example.com">
-                                info@venturesec.com
-                            </a>
+                <div className='contact-numbers bg-white'>
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" className='w-full md:h-[120px] md:flex md:flex-col justify-center items-center py-10'>
+                        <h1 className='flex md:hidden font-semibold pl-5 pb-3'>Email Address</h1>
+                        <div className='email-addresses flex flex-col md:flex-row pl-5'>
+                            <div className='flex p-2'>
+                                <MailIcon className='h-[20px] w-[20px]' />
+                                <a className="pl-2 text-sm" href="mailto:abc@example.com">
+                                    info@venturesec.com
+                                </a>
+                            </div>
+                            <div className='flex p-2'>
+                                <MailIcon className='h-[20px] w-[20px]' />
+                                <a className="pl-2 text-sm" href="mailto:abc@example.com">
+                                    venturesecurities@yahoo.com
+                                </a>
+                            </div>
                         </div>
-                        <div className='flex p-2'>
-                            <MailIcon className='h-[20px] w-[20px]' />
-                            <a className="pl-2 text-sm" href="mailto:abc@example.com">
-                                venturesecurities@yahoo.com
-                            </a>
-                        </div>
-                    </div>
-                    <h1 className='flex md:hidden font-semibold pl-5 pb-3 pt-5'>Contact Number</h1>
-                    <div className='phone-numbers md:flex pl-5'>
-                        <div className='flex p-2'>
-                            <PhoneIcon className='h-[20px] w-[20px]' />
-                            <p className='text-sm pl-2'>Office Tel/Fax : (02) 8848-6505 : (02) 8848-2210</p>
-                        </div>
-                        <div className='flex p-2'>
-                            <PhoneIcon className='h-[20px] w-[20px]' />
-                            <p className='text-sm pl-2'>Traders : (02) 8891-9420 to 21</p>
-                        </div>
-                        <div className='flex p-2'>
-                            <PhoneIcon className='h-[18px] w-[18px]' />
-                            <p className='text-sm pl-2'>Trading Floor Contact Number: +63 02 8919420 to 21</p>
+                        <h1 className='flex md:hidden font-semibold pl-5 pb-3 pt-5'>Contact Number</h1>
+                        <div className='phone-numbers flex flex-col md:flex-row pl-5'>
+                            <div className='flex p-2'>
+                                <PhoneIcon className='h-[20px] w-[20px]' />
+                                <p className='text-sm pl-2'>Office Tel/Fax : (02) 8848-6505 : (02) 8848-2210</p>
+                            </div>
+                            <div className='flex p-2'>
+                                <PhoneIcon className='h-[20px] w-[20px]' />
+                                <p className='text-sm pl-2'>Traders : (02) 8891-9420 to 21</p>
+                            </div>
+                            <div className='flex p-2'>
+                                <PhoneIcon className='h-[18px] w-[18px]' />
+                                <p className='text-sm pl-2'>Trading Floor Contact Number: +63 02 8919420 to 21</p>
+                            </div>
                         </div>
                     </div>
                 </div>

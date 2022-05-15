@@ -1,43 +1,43 @@
 [
   {
-      "id": "home",
-      "component": "Home",
-      "props": {
-          "header": "The Venture Advantage",
-          "infoText": "The Venture Securities, Inc. team is on hand to provide expert services to help fulfill your investment requirements. Launch the online application form so we can get more information about you and your objectives.",
-          "infoText1": "Personalized Broker Assisted Trading",
-          "infoText2": "Competitive Commission Rates",
-          "bg": "/stock-exchange.jpg"
-      }
+    "id": "home",
+    "component": "Home",
+    "props": {
+      "header": "The Venture Advantage",
+      "infoText": "The Venture Securities, Inc. team is on hand to provide expert services to help fulfill your investment requirements. Launch the online application form so we can get more information about you and your objectives.",
+      "infoText1": "Personalized Broker Assisted Trading",
+      "infoText2": "Competitive Commission Rates",
+      "bg": "/stock-exchange.jpg"
+    }
   },
   {
-      "id": "aboutus",
-      "component": "AboutUs",
-      "props": {
-          "data": [
-              {
-                  "title": "Who we are",
-                  "desc": "Venture Securities, Inc. is a leading full service securities brokerage registered with the Philippines Securities and Exchange Commission and a member of the Philippine Stock Exchange. It was established for the primary purpose of selling and dealing of Philippine equity securities.<br><br>The company services a broad range of clients, from small individual investors, to government institutions, trust funds and corporate accounts. Our goal is to provide all our clients with timely execution at the best possible prices backed-up by efficient and reliable settlement of trades.",
-                  "image": ""
-              },
-              {
-                  "title": "Our Services",
-                  "desc": "Personalized, Broker-Assisted Trading. We provide personalized service to our clients with our experienced and highly skilled Certified Securities Representatives who will guide and assist them, give timely advice and promptly execute their trades.<br><br>Competitive Commission Rates.<br>We offer very competitive rates in the market.",
-                  "image": ""
-              },
-              {
-                  "title": "Vision",
-                  "desc": "To be the most preferred stock brokerage firm in the country",
-                  "image": ""
-              },
-              {
-                  "title": "Mission",
-                  "desc": "We aim to provide unparalleled service to our investor clients.<br>We achieve these goals by providing knowledge and prudent advice to our clients while aiming to execute their trades at the best possible market price.<br>We strive to help our clients achieve their short-term and/or long-term investment goals of growth, capital appreciation and/or capital preservation.<br>We will maintain the highest level of integrity in dealing with our clients and fellow brokers.",
-                  "image": ""
-              }
-          ]
-      }
-  },
+    "id": "aboutus",
+    "component": "AboutUs",
+    "props": {
+        "data": [
+            {
+                "title": "Who we are",
+                "desc": "Venture Securities, Inc. is a leading full service securities brokerage registered with the Philippines Securities and Exchange Commission and a member of the Philippine Stock Exchange. It was established for the primary purpose of selling and dealing of Philippine equity securities.<br><br>The company services a broad range of clients, from small individual investors, to government institutions, trust funds and corporate accounts. Our goal is to provide all our clients with timely execution at the best possible prices backed-up by efficient and reliable settlement of trades.",
+                "image": ""
+            },
+            {
+                "title": "Our Services",
+                "desc": "Personalized, Broker-Assisted Trading. We provide personalized service to our clients with our experienced and highly skilled Certified Securities Representatives who will guide and assist them, give timely advice and promptly execute their trades.<br><br>Competitive Commission Rates.<br>We offer very competitive rates in the market.",
+                "image": ""
+            },
+            {
+                "title": "Vision",
+                "desc": "To be the most preferred stock brokerage firm in the country",
+                "image": ""
+            },
+            {
+                "title": "Mission",
+                "desc": "We aim to provide unparalleled service to our investor clients.<br>We achieve these goals by providing knowledge and prudent advice to our clients while aiming to execute their trades at the best possible market price.<br>We strive to help our clients achieve their short-term and/or long-term investment goals of growth, capital appreciation and/or capital preservation.<br>We will maintain the highest level of integrity in dealing with our clients and fellow brokers.",
+                "image": ""
+            }
+        ]
+    }
+},
   {
     "id": "getstarted",
     "component": "GetStarted",
@@ -85,142 +85,147 @@
     }
   },
   {
-      "id": "ourteam",
-      "component": "OurTeam",
-      "props": {
-          "data": [
-              {
-                  "id": "boardofdirectors",
-                  "title": "Board of Directors",
-                  "list": [
-                      {
-                          "image": "/OurTeam/eusebio-h.png",
-                          "mainText": "Eusebio H. Tanco",
-                          "subText": "Chairman"
-                      },
-                      {
-                          "image": "/OurTeam/wilfred-s.png",
-                          "mainText": "Wilfred S. Racadio",
-                          "subText": "President"
-                      },
-                      {
-                          "image": "/OurTeam/yolanda-m.png",
-                          "mainText": "Yolanda M. Bautista",
-                          "subText": "Treasurer"
-                      },
-                      {
-                          "image": "/OurTeam/cabrera-a.png",
-                          "mainText": "Arsenio C. Cabrera",
-                          "subText": "Corporate Secretary"
-                      },
-                      {
-                          "image": "/OurTeam/agustin-j.png",
-                          "mainText": "Joseph Augustin L. Tanco",
-                          "subText": "Director"
-                      },
-                      {
-                          "image": "/OurTeam/bautista-p.png",
-                          "mainText": "Paolo Martin M. Bautista",
-                          "subText": "Director"
-                      },
-                      {
-                          "image": "/OurTeam/tanco-m.png",
-                          "mainText": "Martin K. Tanco",
-                          "subText": "Director"
-                      },
-                      {
-                          "image": "/OurTeam/parker-s.png",
-                          "mainText": "Stanley Parker Uy-Ong",
-                          "subText": "Independent Director"
-                      },
-                      {
-                          "image": "/OurTeam/lumen-f.png",
-                          "mainText": "Francisco D. Lumen",
-                          "subText": "Independent Director"
-                      }
-                  ]
-              },
-              {
-                  "id": "managementteam",
-                  "title": "Management Team",
-                  "list": [
-                      {
-                          "image": "/OurTeam/eusebio-h.png",
-                          "mainText": "Eusebio H. Tanco",
-                          "subText": "Chairman"
-                      },
-                      {
-                          "image": "/OurTeam/wilfred-s.png",
-                          "mainText": "Wilfred S. Racadio",
-                          "subText": "President"
-                      },
-                      {
-                          "image": "/OurTeam/cabrera-a.png",
-                          "mainText": "Arsenio C. Cabrera",
-                          "subText": "Corporate Secretary"
-                      },
-                      {
-                          "image": "/OurTeam/yolanda-m.png",
-                          "mainText": "Yolanda M. Bautista",
-                          "subText": "Treasurer"
-                      },
-                      {
-                          "image": "/OurTeam/gonzales-r.png",
-                          "mainText": "Regina Tanco-Gonzales",
-                          "subText": "Authorized Signatory"
-                      },
-                      {
-                          "image": "/OurTeam/aguilar-a.png",
-                          "mainText": "Adora M. Aguilar",
-                          "subText": "Associated Person"
-                      },
-                      {
-                          "image": "/OurTeam/mosenabre-t.png",
-                          "mainText": "Teresita B. Mosenabre",
-                          "subText": "Settlement Head"
-                      }
-                  ]
-              },
-              {
-                  "id": "tradingpersonnel",
-                  "title": "Trading Personnel",
-                  "list": [
-                      {
-                          "image": "/OurTeam/nebrida-s.jpg",
-                          "mainText": "Shirley E. Nebrida",
-                          "subText": "Sales and Marketing Head"
-                      },
-                      {
-                          "image": "/OurTeam/romanes-e.png",
-                          "mainText": "Erwin M. Romanes",
-                          "subText": "Licensed Salesman"
-                      },
-                      {
-                          "image": "/OurTeam/latumbo-g.png",
-                          "mainText": "Gerry C. Latumbo",
-                          "subText": "Licensed Salesman"
-                      }
-                  ]
-              }
+    "id": "ourteam",
+    "component": "OurTeam",
+    "props": {
+      "data": [
+        {
+          "id": "boardofdirectors",
+          "title": "Board of Directors",
+          "list": [
+            {
+              "image": "/OurTeam/eusebio-h.png",
+              "mainText": "Eusebio H. Tanco",
+              "subText": "Chairman"
+            },
+            {
+              "image": "/OurTeam/wilfred-s.png",
+              "mainText": "Wilfred S. Racadio",
+              "subText": "President"
+            },
+            {
+              "image": "/OurTeam/yolanda-m.png",
+              "mainText": "Yolanda M. Bautista",
+              "subText": "Treasurer"
+            },
+            {
+              "image": "/OurTeam/cabrera-a.png",
+              "mainText": "Arsenio C. Cabrera",
+              "subText": "Corporate Secretary"
+            },
+            {
+              "image": "/OurTeam/agustin-j.png",
+              "mainText": "Joseph Augustin L. Tanco",
+              "subText": "Director"
+            },
+            {
+              "image": "/OurTeam/bautista-p.png",
+              "mainText": "Paolo Martin M. Bautista",
+              "subText": "Director"
+            },
+            {
+              "image": "/OurTeam/tanco-m.png",
+              "mainText": "Martin K. Tanco",
+              "subText": "Director"
+            },
+            {
+              "image": "/OurTeam/parker-s.png",
+              "mainText": "Stanley Parker Uy-Ong",
+              "subText": "Independent Director"
+            },
+            {
+              "image": "/OurTeam/lumen-f.png",
+              "mainText": "Francisco D. Lumen",
+              "subText": "Independent Director"
+            }
           ]
-      }
+        },
+        {
+          "id": "managementteam",
+          "title": "Management Team",
+          "list": [
+            {
+              "image": "/OurTeam/eusebio-h.png",
+              "mainText": "Eusebio H. Tanco",
+              "subText": "Chairman"
+            },
+            {
+              "image": "/OurTeam/wilfred-s.png",
+              "mainText": "Wilfred S. Racadio",
+              "subText": "President"
+            },
+            {
+              "image": "/OurTeam/cabrera-a.png",
+              "mainText": "Arsenio C. Cabrera",
+              "subText": "Corporate Secretary"
+            },
+            {
+              "image": "/OurTeam/yolanda-m.png",
+              "mainText": "Yolanda M. Bautista",
+              "subText": "Treasurer"
+            },
+            {
+              "image": "/OurTeam/gonzales-r.png",
+              "mainText": "Regina Tanco-Gonzales",
+              "subText": "Authorized Signatory"
+            },
+            {
+              "image": "/OurTeam/aguilar-a.png",
+              "mainText": "Adora M. Aguilar",
+              "subText": "Associated Person"
+            },
+            {
+              "image": "/OurTeam/mosenabre-t.png",
+              "mainText": "Teresita B. Mosenabre",
+              "subText": "Settlement Head"
+            }
+          ]
+        },
+        {
+          "id": "tradingpersonnel",
+          "title": "Trading Personnel",
+          "list": [
+            {
+              "image": "/OurTeam/nebrida-s.jpg",
+              "mainText": "Shirley E. Nebrida",
+              "subText": "Sales and Marketing Head"
+            },
+            {
+              "image": "/OurTeam/romanes-e.png",
+              "mainText": "Erwin M. Romanes",
+              "subText": "Licensed Salesman"
+            },
+            {
+              "image": "/OurTeam/latumbo-g.png",
+              "mainText": "Gerry C. Latumbo",
+              "subText": "Licensed Salesman"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
-      "id": "contactus",
-      "component": "ContactUs",
-      "props": {
-          "serviceId": "service_fj2ibi7",
-          "publicId": "Dy8g88_EJ6kGDE-nM",
-          "templateId": "template_yw53gx4",
-          "bg": "/bg1.jpg"
-      }
+    "id": "faq",
+    "component": "FAQPage",
+    "props": {}
   },
   {
-      "id": "footer",
-      "component": "Footer",
-      "props": {
-          "text": "© 2021 Venture Securities, Inc.",
-          "icon": ""
-      }
+    "id": "contactus",
+    "component": "ContactUs",
+    "props": {
+      "serviceId": "service_fj2ibi7",
+      "publicId": "Dy8g88_EJ6kGDE-nM",
+      "templateId": "template_yw53gx4",
+      "bg": "/bg1.jpg"
+    }
+  },
+  {
+    "id": "footer",
+    "component": "Footer",
+    "props": {
+      "text": "© 2021 Venture Securities, Inc.",
+      "icon": ""
+    }
   }
 ]
