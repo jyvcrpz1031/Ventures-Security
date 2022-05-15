@@ -1,6 +1,10 @@
 .get-started {
   text-align: left;
   padding: 20px 0;
+  background: url(../../../../public/workbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 
