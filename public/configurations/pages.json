@@ -14,30 +14,30 @@
     "id": "aboutus",
     "component": "AboutUs",
     "props": {
-      "data": [
-        {
-          "title": "Who we are",
-          "desc": "Venture Securities, Inc. is a leading full service securities brokerage registered with the Philippines Securities and Exchange Commission and a member of the Philippine Stock Exchange. It was established for the primary purpose of selling and dealing of Philippine equity securities.<br><br>The company services a broad range of clients, from small individual investors, to government institutions, trust funds and corporate accounts. Our goal is to provide all our clients with timely execution at the best possible prices backed-up by efficient and reliable settlement of trades.",
-          "image": ""
-        },
-        {
-          "title": "Our Services",
-          "desc": "Personalized, Broker-Assisted Trading. We provide personalized service to our clients with our experienced and highly skilled Certified Securities Representatives who will guide and assist them, give timely advice and promptly execute their trades.<br><br>Competitive Commission Rates.<br>We offer very competitive rates in the market.",
-          "image": ""
-        },
-        {
-          "title": "Vision",
-          "desc": "To be the most preferred stock brokerage firm in the country",
-          "image": ""
-        },
-        {
-          "title": "Mission",
-          "desc": "We aim to provide unparalleled service to our investor clients.<br>We achieve these goals by providing knowledge and prudent advice to our clients while aiming to execute their trades at the best possible market price.<br>We strive to help our clients achieve their short-term and/or long-term investment goals of growth, capital appreciation and/or capital preservation.<br>We will maintain the highest level of integrity in dealing with our clients and fellow brokers.",
-          "image": ""
-        }
-      ]
+        "data": [
+            {
+                "title": "Who we are",
+                "desc": "Venture Securities, Inc. is a leading full service securities brokerage registered with the Philippines Securities and Exchange Commission and a member of the Philippine Stock Exchange. It was established for the primary purpose of selling and dealing of Philippine equity securities.<br><br>The company services a broad range of clients, from small individual investors, to government institutions, trust funds and corporate accounts. Our goal is to provide all our clients with timely execution at the best possible prices backed-up by efficient and reliable settlement of trades.",
+                "image": ""
+            },
+            {
+                "title": "Our Services",
+                "desc": "Personalized, Broker-Assisted Trading. We provide personalized service to our clients with our experienced and highly skilled Certified Securities Representatives who will guide and assist them, give timely advice and promptly execute their trades.<br><br>Competitive Commission Rates.<br>We offer very competitive rates in the market.",
+                "image": ""
+            },
+            {
+                "title": "Vision",
+                "desc": "To be the most preferred stock brokerage firm in the country",
+                "image": ""
+            },
+            {
+                "title": "Mission",
+                "desc": "We aim to provide unparalleled service to our investor clients.<br>We achieve these goals by providing knowledge and prudent advice to our clients while aiming to execute their trades at the best possible market price.<br>We strive to help our clients achieve their short-term and/or long-term investment goals of growth, capital appreciation and/or capital preservation.<br>We will maintain the highest level of integrity in dealing with our clients and fellow brokers.",
+                "image": ""
+            }
+        ]
     }
-  },
+},
   {
     "id": "getstarted",
     "component": "GetStarted",
