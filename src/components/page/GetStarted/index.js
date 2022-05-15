@@ -50,7 +50,8 @@ class GetStarted extends React.Component {
 
   render(props, state) {
     return (
-      <div className="get-started">
+      <div className="get-started relative">
+        <img alt="bg.jpg" src={`${process.env.PUBLIC_URL}${this.props.bg}`} className="w-full h-full object-cover absolute top-0 z-[-2]"/>
         <h1 data-aos="fade-down" data-aos-once="true" className="get-started-header">Get Started</h1>
         <hr data-aos="fade-down" data-aos-once="true" className='w-[50px] m-auto mt-3 mb-3 bg-black border-0 h-[1px]' />
         {/* Individual Joint */}
@@ -67,9 +68,8 @@ class GetStarted extends React.Component {
 
             {this.state?.individualJoint?.map((data, i) => {
               return (
-                <div className="individual-download-container">
+                <div key={i} className="individual-download-container">
                   <a
-                    key={i}
                     className="indivWidual-download"
                     href={data?.link}
                     download={data?.link}
@@ -120,9 +120,8 @@ class GetStarted extends React.Component {
 
             {this.state?.corporate?.map((data, i) => {
               return (
-                <div className="individual-download-container">
+                <div key={i} className="individual-download-container">
                   <a
-                    key={i}
                     className="individual-download"
                     href={data?.link}
                     download={data?.link}
