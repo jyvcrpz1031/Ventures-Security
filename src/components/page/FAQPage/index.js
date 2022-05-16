@@ -90,6 +90,7 @@ class FAQPage extends React.Component {
                 <div className="question-container">
                   <div
                     data-aos="fade-left"
+                    data-aos-once="true"
                     key={i}
                     className="question-item-clickable"
                     onClick={() => this.handleOpenQuestion(i)}
@@ -102,7 +103,7 @@ class FAQPage extends React.Component {
                     <h1 className="question-item-header">{question}</h1>
                   </div>
                   {isOpen ? (
-                    <div data-aos="fade-down" key={i} className="question-item">
+                    <div data-aos="fade-down" data-aos-once="true" key={i} className="question-item">
                       <span
                         dangerouslySetInnerHTML={{ __html: answer }}
                         className="question-item-span"
