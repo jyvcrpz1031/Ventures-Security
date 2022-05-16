@@ -164,7 +164,7 @@ class ContactUs extends React.Component {
                                                 onInput={ev => this.validateMessage(ev.target.value)}
                                             />
                                         </div>
-                                        <button disabled={this.state.sending} onClick={this.sendMessage} className={`submit-btn text-sm text-white font-semibold h-[40px] w-[150px] rounded-lg text-white border-1 border-white hover:text-black hover:bg-white hover:border-1 hover:border-black transition duration-300 ease-in uppercase rounded-xl mx-auto ${this.state.sending ? 'opacity-20' : ''}`}>Send Message</button>
+                                        <button disabled={this.state.sending} onClick={this.sendMessage} className={`submit-btn text-sm text-white font-semibold h-[40px] w-[150px] rounded-lg text-white border-1 border-white hover:text-black hover:bg-white hover:border-1 hover:border-black transition duration-300 ease-in uppercase rounded-xl mx-auto ${this.state.sending ? 'opacity-20' : ''}`}>Submit</button>
                                     </form>
                                 </div>
                             </div>

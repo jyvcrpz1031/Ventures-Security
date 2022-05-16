@@ -38,8 +38,6 @@ class FAQPage extends React.Component {
 
         {/* FAQ List */}
         <div className="faq-list">
-          <h2 className="faq-list-header">Help Center</h2>
-
           <div className="question-list">
             {this.state?.questions?.map(({ question, answer, isOpen }, i) => {
               return (
@@ -48,7 +46,7 @@ class FAQPage extends React.Component {
                     data-aos="fade-left"
                     data-aos-once="true"
                     key={i}
-                    className="question-item-clickable"
+                    className="question-item-clickable bg-gradient-to-b from-gray-50 to-gray-200"
                     onClick={() => this.handleOpenQuestion(i)}
                   >
                     <span className="p-2">
