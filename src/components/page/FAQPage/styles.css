@@ -27,17 +27,31 @@
 .question-item {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 20px;
-  width: 200px;
   padding: 20px;
   cursor: pointer;
-  min-width: 500px;
+  width: 100%;
 }
+
 
 .question-item-header {
   font-weight: bold;
-  padding-bottom: 10px;
 }
 
 .question-item-span {
 
+}
+
+.question-container {
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.question-item-clickable {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
