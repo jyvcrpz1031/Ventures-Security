@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Ventures-Security/static/css/main.d1feb9f0.css",
-    "main.js": "/Ventures-Security/static/js/main.6d27f9a0.js",
+    "main.css": "/Ventures-Security/static/css/main.111e9821.css",
+    "main.js": "/Ventures-Security/static/js/main.59cc1e53.js",
     "static/js/787.7e26e59c.chunk.js": "/Ventures-Security/static/js/787.7e26e59c.chunk.js",
     "index.html": "/Ventures-Security/index.html",
-    "main.d1feb9f0.css.map": "/Ventures-Security/static/css/main.d1feb9f0.css.map",
-    "main.6d27f9a0.js.map": "/Ventures-Security/static/js/main.6d27f9a0.js.map",
+    "main.111e9821.css.map": "/Ventures-Security/static/css/main.111e9821.css.map",
+    "main.59cc1e53.js.map": "/Ventures-Security/static/js/main.59cc1e53.js.map",
     "787.7e26e59c.chunk.js.map": "/Ventures-Security/static/js/787.7e26e59c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1feb9f0.css",
-    "static/js/main.6d27f9a0.js"
+    "static/css/main.111e9821.css",
+    "static/js/main.59cc1e53.js"
   ]
 }
