@@ -8,9 +8,11 @@ class FAQPage extends React.Component {
     currentIndex: null,
   };
 
+  componentDidMount = () => {
+    this.setState({ questions: this.props.data?.questions });
+  }
+
   handleOpenQuestion = (i) => {
-    // eslint-disable-next-line no-self-compare
-    console.log(1234, this.state.questions[i].isOpen);
     this.setState({
       questions: this.state.questions?.map((question, idx) => {
         if (idx === i) {
@@ -20,9 +22,8 @@ class FAQPage extends React.Component {
         }
       })
     })
-    // this.setState({ questions: this.state.questions[i].isOpen !== this.state.questions[i].isOpen });
   };
-
+  
   render() {
     return (
       <div className="faq-container">
