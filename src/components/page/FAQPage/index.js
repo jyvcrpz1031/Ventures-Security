@@ -57,8 +57,8 @@ class FAQPage extends React.Component {
     console.log(1234, this.state.questions[i].isOpen);
     this.setState({
       questions: this.state.questions?.map((question, idx) => {
-        if(idx === i) {
-          return { ...question, isOpen: !question?.isOpen}
+        if (idx === i) {
+          return { ...question, isOpen: !question?.isOpen }
         } else {
           return question
         }
@@ -94,11 +94,13 @@ class FAQPage extends React.Component {
                     className="question-item-clickable"
                     onClick={() => this.handleOpenQuestion(i)}
                   >
-                    {isOpen ? (
-                      <ChevronUpIcon className="h-[40px] w-[40px] text-black-800 opacity-1" />
-                    ) : (
-                      <ChevronDownIcon className="h-[40px] w-[40px] text-black-800 opacity-1" />
-                    )}
+                    <span className="p-2">
+                      {isOpen ? (
+                        <ChevronUpIcon className="h-[40px] w-[40px] text-black-800 opacity-1" />
+                      ) : (
+                        <ChevronDownIcon className="h-[40px] w-[40px] text-black-800 opacity-1" />
+                      )}
+                    </span>
                     <h1 className="question-item-header">{question}</h1>
                   </div>
                   {isOpen ? (
