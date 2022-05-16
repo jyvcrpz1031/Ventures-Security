@@ -38,7 +38,7 @@ class GetStarted extends React.Component {
           link: "public/Signature-Card-Corporate.pdf",
         },
         {
-          description: "d. Client Consent Form (Data Privacy Act):",
+          description: "d. Client Consent Form (Data Privacy Act)",
           link: "",
         },
       ],
