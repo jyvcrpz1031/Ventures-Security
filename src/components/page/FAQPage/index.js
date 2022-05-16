@@ -38,8 +38,6 @@ class FAQPage extends React.Component {
 
         {/* FAQ List */}
         <div className="faq-list">
-          <h2 className="faq-list-header">Help Center</h2>
-
           <div className="question-list">
             {this.state?.questions?.map(({ question, answer, isOpen }, i) => {
               return (
