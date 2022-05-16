@@ -1,32 +1,29 @@
 import React from "react";
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
 import "./styles.css";
 
 class FAQPage extends React.Component {
   state = {
-    questions: [
-      {
-        question: "How are you?",
-        answer:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      },
-      {
-        question: "How are you?",
-        answer:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      },
-      {
-        question: "How are you?",
-        answer:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      },
-      {
-        question: "How are you?",
-        answer:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      },
-
-    ],
+    questions: [],
+    currentIndex: null,
   };
+
+  componentDidMount = () => {
+    this.setState({ questions: this.props.data?.questions });
+  }
+
+  handleOpenQuestion = (i) => {
+    this.setState({
+      questions: this.state.questions?.map((question, idx) => {
+        if (idx === i) {
+          return { ...question, isOpen: !question?.isOpen }
+        } else {
+          return question
+        }
+      })
+    })
+  };
+  
   render() {
     return (
       <div className="faq-container">
@@ -44,11 +41,33 @@ class FAQPage extends React.Component {
           <h2 className="faq-list-header">Help Center</h2>
 
           <div className="question-list">
-            {this.state.questions?.map(({ question, answer }, i) => {
+            {this.state?.questions?.map(({ question, answer, isOpen }, i) => {
               return (
-                <div key={i} className="question-item">
-                  <h1 className="question-item-header">{question}</h1>
-                  <span className="question-item-span">{answer}</span>
+                <div className="question-container">
+                  <div
+                    data-aos="fade-left"
+                    data-aos-once="true"
+                    key={i}
+                    className="question-item-clickable"
+                    onClick={() => this.handleOpenQuestion(i)}
+                  >
+                    <span className="p-2">
+                      {isOpen ? (
+                        <ChevronUpIcon className="h-[40px] w-[40px] text-black-800 opacity-1" />
+                      ) : (
+                        <ChevronDownIcon className="h-[40px] w-[40px] text-black-800 opacity-1" />
+                      )}
+                    </span>
+                    <h1 className="question-item-header">{question}</h1>
+                  </div>
+                  {isOpen ? (
+                    <div data-aos="fade-down" data-aos-once="true" key={i} className="question-item">
+                      <span
+                        dangerouslySetInnerHTML={{ __html: answer }}
+                        className="question-item-span"
+                      />
+                    </div>
+                  ) : null}
                 </div>
               );
             })}
