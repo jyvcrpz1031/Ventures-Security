@@ -53,8 +53,6 @@ class FAQPage extends React.Component {
   };
 
   handleOpenQuestion = (i) => {
-    // eslint-disable-next-line no-self-compare
-    console.log(1234, this.state.questions[i].isOpen);
     this.setState({
       questions: this.state.questions?.map((question, idx) => {
         if(idx === i) {
