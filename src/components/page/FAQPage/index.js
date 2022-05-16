@@ -85,7 +85,6 @@ class FAQPage extends React.Component {
 
           <div className="question-list">
             {this.state?.questions?.map(({ question, answer, isOpen }, i) => {
-              console.log({ question, answer, isOpen })
               return (
                 <div className="question-container">
                   <div
@@ -96,9 +95,9 @@ class FAQPage extends React.Component {
                     onClick={() => this.handleOpenQuestion(i)}
                   >
                     {isOpen ? (
-                      <ChevronUpIcon className="h-[40px] w-[40px] text-black-500 opacity-10" />
+                      <ChevronUpIcon className="h-[40px] w-[40px] text-black-800 opacity-1" />
                     ) : (
-                      <ChevronDownIcon className="h-[40px] w-[40px] text-black-500 opacity-10" />
+                      <ChevronDownIcon className="h-[40px] w-[40px] text-black-800 opacity-1" />
                     )}
                     <h1 className="question-item-header">{question}</h1>
                   </div>
