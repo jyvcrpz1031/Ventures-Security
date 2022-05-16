@@ -5,7 +5,6 @@ import "./styles.css";
 class FAQPage extends React.Component {
   state = {
     questions: [],
-    // isOpen: false,
     currentIndex: null,
   };
 
