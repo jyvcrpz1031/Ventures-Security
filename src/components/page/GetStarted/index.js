@@ -19,7 +19,7 @@ class GetStarted extends React.Component {
           link: "public/Signature-Card-Individual.pdf",
         },
         {
-          description: "d. Client Consent Form (Data Privacy Act):",
+          description: "d. Client Consent Form (Data Privacy Act)",
           link: "",
         },
       ],
@@ -53,7 +53,7 @@ class GetStarted extends React.Component {
       <div className="get-started relative">
         <img alt="bg.jpg" src={`${process.env.PUBLIC_URL}${this.props.bg}`} className="w-full h-full object-cover absolute top-0 z-[-2]"/>
         <h1 data-aos="fade-down" data-aos-once="true" className="get-started-header">Get Started</h1>
-        <hr data-aos="fade-down" data-aos-once="true" className='w-[50px] m-auto mt-3 mb-3 bg-black border-0 h-[1px]' />
+        <hr data-aos="fade-down" data-aos-once="true" className='w-[50px] m-auto mt-3 mb-3 bg-white border-0 h-[1px]' />
         {/* Individual Joint */}
         <div className="get-started-container">
           <div data-aos="fade-right" data-aos-once="true" className="bg-white individual-joint-container">
@@ -70,7 +70,7 @@ class GetStarted extends React.Component {
               return (
                 <div key={i} className="individual-download-container">
                   <a
-                    className="indivWidual-download"
+                    className="individual-download"
                     href={data?.link}
                     download={data?.link}
                   >
