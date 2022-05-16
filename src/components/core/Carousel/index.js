@@ -4,6 +4,8 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 let timer = null;
 let direction = -1;
+let touchStart = null;
+let touchEnd = null;
 
 class Carousel extends React.Component {
     constructor(props) {
@@ -122,6 +124,22 @@ class Carousel extends React.Component {
         this.startSlide();
     }
 
+    onTouchEndSlide = (e) => {
+        touchEnd = null;
+        touchEnd = e.touches[0].clientX;
+
+        if(touchStart < touchEnd) {
+            this.prevSlide();
+        } else {
+            this.nextSlide();
+        }
+    }
+
+    onTouchStartSlide = (e) => {
+        touchStart = null;
+        touchStart = e.touches[0].clientX;
+    }
+
 
 
     render() {
@@ -131,7 +149,7 @@ class Carousel extends React.Component {
                     <span className='icon-prev' onClick={this.prevSlide}>
                         <ChevronLeftIcon className='h-[65px] w-[65px] text-black-500 opacity-10' />
                     </span>
-                    <div className='item-wrap flex flex-nowrap mx-auto'>
+                    <div onTouchStart={this.onTouchStartSlide.bind(this)} onTouchMove={this.onTouchEndSlide.bind(this)} className='item-wrap flex flex-nowrap mx-auto'>
                         {this.state.data.map((item, i) => {
                             return (
                                 <div className={`item m-auto shrink-0 flex justify-center item-center item${i}`} key={i}>

@@ -189,13 +189,13 @@ class ContactUs extends React.Component {
                         <div className='email-addresses flex flex-col md:flex-row pl-5'>
                             <div className='flex p-2'>
                                 <MailIcon className='h-[20px] w-[20px]' />
-                                <a className="pl-2 text-sm" href="mailto:abc@example.com">
+                                <a className="pl-2 text-base" href="mailto:abc@example.com">
                                     info@venturesec.com
                                 </a>
                             </div>
                             <div className='flex p-2'>
                                 <MailIcon className='h-[20px] w-[20px]' />
-                                <a className="pl-2 text-sm" href="mailto:abc@example.com">
+                                <a className="pl-2 text-base" href="mailto:abc@example.com">
                                     venturesecurities@yahoo.com
                                 </a>
                             </div>
@@ -204,15 +204,15 @@ class ContactUs extends React.Component {
                         <div className='phone-numbers flex flex-col md:flex-row pl-5'>
                             <div className='flex p-2'>
                                 <PhoneIcon className='h-[20px] w-[20px]' />
-                                <p className='text-sm pl-2'>Office Tel/Fax : (02) 8848-6505 : (02) 8848-2210</p>
+                                <p className='text-sm sm:text-base pl-2'>Office Tel/Fax : (02) 8848-6505 : (02) 8848-2210</p>
                             </div>
                             <div className='flex p-2'>
                                 <PhoneIcon className='h-[20px] w-[20px]' />
-                                <p className='text-sm pl-2'>Traders : (02) 8891-9420 to 21</p>
+                                <p className='text-sm sm:text-base pl-2'>Traders : (02) 8891-9420 to 21</p>
                             </div>
                             <div className='flex p-2'>
                                 <PhoneIcon className='h-[18px] w-[18px]' />
-                                <p className='text-sm pl-2'>Trading Floor Contact Number: +63 02 8919420 to 21</p>
+                                <p className='text-sm sm:text-base pl-2'>Trading Floor Contact Number: +63 02 8919420 to 21</p>
                             </div>
                         </div>
                     </div>
