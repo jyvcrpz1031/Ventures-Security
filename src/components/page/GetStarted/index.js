@@ -45,16 +45,18 @@ class GetStarted extends React.Component {
     };
   }
 
-  componentDidMount = () => { };
+  componentDidMount = () => {
+   };
 
   render(props, state) {
     return (
-      <div className="get-started bg-white">
-        <h1 className="get-started-header">Get Started</h1>
-        <hr className='w-[50px] m-auto mt-3 mb-3 bg-black border-0 h-[1px]' />
+      <div className="get-started relative">
+        <img alt="bg.jpg" src={`${process.env.PUBLIC_URL}${this.props.bg}`} className="w-full h-full object-cover absolute top-0 z-[-2]"/>
+        <h1 data-aos="fade-down" data-aos-once="true" className="get-started-header">Get Started</h1>
+        <hr data-aos="fade-down" data-aos-once="true" className='w-[50px] m-auto mt-3 mb-3 bg-black border-0 h-[1px]' />
         {/* Individual Joint */}
         <div className="get-started-container">
-          <div className="individual-joint-container">
+          <div data-aos="fade-right" data-aos-once="true" className="bg-white individual-joint-container">
             <h1 className="individual-joint-header">Individual Joint</h1>
             <p className="individual-joint-subheader">
               Open an Individual or Joint Account
@@ -66,10 +68,9 @@ class GetStarted extends React.Component {
 
             {this.state?.individualJoint?.map((data, i) => {
               return (
-                <div className="individual-download-container">
+                <div key={i} className="individual-download-container">
                   <a
-                    key={i}
-                    className="individual-download"
+                    className="indivWidual-download"
                     href={data?.link}
                     download={data?.link}
                   >
@@ -109,7 +110,7 @@ class GetStarted extends React.Component {
           </div>
 
           {/* Corporate */}
-          <div className="corporate-container">
+          <div data-aos="fade-left" data-aos-once="true" className="bg-white corporate-container">
             <h1 className="corporate-header">Corporate</h1>
             <p className="corporate-subheader">Open a Corporate Account</p>
 
@@ -119,9 +120,8 @@ class GetStarted extends React.Component {
 
             {this.state?.corporate?.map((data, i) => {
               return (
-                <div className="individual-download-container">
+                <div key={i} className="individual-download-container">
                   <a
-                    key={i}
                     className="individual-download"
                     href={data?.link}
                     download={data?.link}

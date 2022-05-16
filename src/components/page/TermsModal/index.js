@@ -28,12 +28,18 @@ class TermsModal extends React.Component {
 
     componentDidMount = () => { 
         this.fetchTerms();
+        if (this.state.modalOpen) {
+            document.body.style.overflow = "hidden";
+        }
     }
 
     closeModal = () => {
         this.setState({
             modalOpen: false
         })
+        if (this.state.modalOpen) {
+            document.body.style.overflow = "auto";
+        }
     }
 
     render() {
