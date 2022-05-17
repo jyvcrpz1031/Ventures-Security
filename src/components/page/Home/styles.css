@@ -18,3 +18,9 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(184, 72, 3, 0.6));
     left: 0;
 }
+
+@media only screen and (max-height: 480px) {
+    .home-section .content {
+        height: 500px;
+    }
+}
