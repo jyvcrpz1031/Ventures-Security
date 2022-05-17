@@ -8,15 +8,15 @@ class GetStarted extends React.Component {
       individualJoint: [
         {
           description: "a. Customer Account Information Form (CAIF)",
-          link: "public/CAIF_Individual-front.pdf",
+          link: "/CAIF_Individual-front.pdf",
         },
         {
           description: "b. Trading Agreement (Terms and Conditions)",
-          link: "public/VSI-Trading-Agreement-Individual.pdf",
+          link: "/VSI-Trading-Agreement-Individual.pdf",
         },
         {
           description: "c. Two (2) Specimen Signature Cards",
-          link: "public/Signature-Card-Individual.pdf",
+          link: "/Signature-Card-Individual.pdf",
         },
         {
           description: "d. Client Consent Form (Data Privacy Act)",
@@ -26,16 +26,16 @@ class GetStarted extends React.Component {
       corporate: [
         {
           description: "a. Corporate Account Information Form (CAIF)",
-          link: "public/CAIF_Corporate-Account.pdf",
+          link: "/CAIF_Corporate-Account.pdf",
         },
         {
           description: "b. Trading Agreement (Terms and Conditions)",
-          link: "public/VSI-Trading-Agreement-Individual.pdf",
+          link: "/VSI-Trading-Agreement-Individual.pdf",
         },
         {
           description:
             "c. Two (2) Specimen Signature Cards verified by the Corporate Secretary",
-          link: "public/Signature-Card-Corporate.pdf",
+          link: "/Signature-Card-Corporate.pdf",
         },
         {
           description: "d. Client Consent Form (Data Privacy Act)",
