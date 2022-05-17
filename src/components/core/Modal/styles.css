@@ -6,3 +6,24 @@
     background: white;
     border: 1px solid black;
 }
+
+.modal-body {
+    overflow: auto;
+}
+
+@media only screen and (max-height: 680px) {
+    .modal-box {
+        max-height: 30rem;
+    }
+}
+
+
+@media only screen and (max-height: 480px) {
+    .modal-box {
+        max-height: 23rem;
+    }
+
+    .text-box {
+        max-height: 235px;
+    }
+}
