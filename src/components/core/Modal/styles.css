@@ -11,9 +11,13 @@
     overflow: auto;
 }
 
-@media only screen and (max-height: 680px) {
+@media only screen and (max-height: 680px) and (min-height: 481px) {
     .modal-box {
-        max-height: 30rem;
+        max-height: 32rem !important;
+    }
+
+    .text-box {
+        max-height: 275px !important;
     }
 }
 
