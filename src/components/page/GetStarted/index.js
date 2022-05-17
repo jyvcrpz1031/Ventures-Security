@@ -65,14 +65,13 @@ class GetStarted extends React.Component {
             <p className="numbered-item">
               1. Download, print, fill out and sign the following:
             </p>
-
             {this.state?.individualJoint?.map((data, i) => {
               return (
                 <div key={i} className="individual-download-container">
                   <a
                     className="individual-download"
-                    href={data?.link}
-                    download={data?.link}
+                    href={`${process.env.PUBLIC_URL}${data?.link}`}
+                    download={`${process.env.PUBLIC_URL}${data?.link}`}
                   >
                     {data?.description}
                   </a>
