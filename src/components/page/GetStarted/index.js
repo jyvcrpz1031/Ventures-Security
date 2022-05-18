@@ -16,11 +16,11 @@ class GetStarted extends React.Component {
         },
         {
           description: "c. Two (2) Specimen Signature Cards",
-          link: "/Signature-Card-Individual.pdf",
+          link: "/VSI_CAIF_Individual_Signature_Card.pdf",
         },
         {
           description: "d. Client Consent Form (Data Privacy Act)",
-          link: "",
+          link: "/VSI_Client_Consent_Form_Data_Privacy.pdf",
         },
       ],
       corporate: [
@@ -35,11 +35,11 @@ class GetStarted extends React.Component {
         {
           description:
             "c. Two (2) Specimen Signature Cards verified by the Corporate Secretary",
-          link: "/Signature-Card-Corporate.pdf",
+          link: "/VSI_CAIF_Corporate_Signature_Card.pdf",
         },
         {
           description: "d. Client Consent Form (Data Privacy Act)",
-          link: "",
+          link: "/VSI_Client_Consent_Form_Data_Privacy.pdf",
         },
       ],
     };
