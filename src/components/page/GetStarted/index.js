@@ -20,7 +20,7 @@ class GetStarted extends React.Component {
         },
         {
           description: "d. Client Consent Form (Data Privacy Act)",
-          link: "",
+          link: "/VSI_Client_Consent_Form_Data_Privacy.pdf",
         },
       ],
       corporate: [
@@ -39,7 +39,7 @@ class GetStarted extends React.Component {
         },
         {
           description: "d. Client Consent Form (Data Privacy Act)",
-          link: "",
+          link: "/VSI_Client_Consent_Form_Data_Privacy.pdf",
         },
       ],
     };
