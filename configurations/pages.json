@@ -100,12 +100,12 @@
               "subText": "Chairman"
             },
             {
-              "image": "/OurTeam/wilfred-s.png",
+              "image": "/OurTeam/wilfred-s.jpg",
               "mainText": "Wilfred S. Racadio",
               "subText": "President"
             },
             {
-              "image": "/OurTeam/yolanda-m.png",
+              "image": "/OurTeam/yolanda-m.jpg",
               "mainText": "Yolanda M. Bautista",
               "subText": "Treasurer"
             },
@@ -115,27 +115,27 @@
               "subText": "Corporate Secretary"
             },
             {
-              "image": "/OurTeam/agustin-j.png",
+              "image": "/OurTeam/agustin-j.jpg",
               "mainText": "Joseph Augustin L. Tanco",
               "subText": "Director"
             },
             {
-              "image": "/OurTeam/bautista-p.png",
+              "image": "/OurTeam/bautista-p.jpg",
               "mainText": "Paolo Martin M. Bautista",
               "subText": "Director"
             },
             {
-              "image": "/OurTeam/tanco-m.png",
+              "image": "/OurTeam/tanco-m.jpg",
               "mainText": "Martin K. Tanco",
               "subText": "Director"
             },
             {
-              "image": "/OurTeam/parker-s.png",
+              "image": "/OurTeam/parker-s.jpg",
               "mainText": "Stanley Parker Uy-Ong",
               "subText": "Independent Director"
             },
             {
-              "image": "/OurTeam/lumen-f.png",
+              "image": "/OurTeam/lumen-f.jpg",
               "mainText": "Francisco D. Lumen",
               "subText": "Independent Director"
             }
@@ -151,32 +151,32 @@
               "subText": "Chairman"
             },
             {
-              "image": "/OurTeam/wilfred-s.png",
+              "image": "/OurTeam/wilfred-s.jpg",
               "mainText": "Wilfred S. Racadio",
               "subText": "President"
             },
             {
-              "image": "/OurTeam/cabrera-a.png",
+              "image": "/OurTeam/cabrera-a.jpg",
               "mainText": "Arsenio C. Cabrera",
               "subText": "Corporate Secretary"
             },
             {
-              "image": "/OurTeam/yolanda-m.png",
+              "image": "/OurTeam/yolanda-m.jpg",
               "mainText": "Yolanda M. Bautista",
               "subText": "Treasurer"
             },
             {
-              "image": "/OurTeam/gonzales-r.png",
+              "image": "/OurTeam/gonzales-r.jpg",
               "mainText": "Regina Tanco-Gonzales",
               "subText": "Authorized Signatory"
             },
             {
-              "image": "/OurTeam/aguilar-a.png",
+              "image": "/OurTeam/aguilar-a.jpg",
               "mainText": "Adora M. Aguilar",
               "subText": "Associated Person"
             },
             {
-              "image": "/OurTeam/mosenabre-t.png",
+              "image": "/OurTeam/mosenabre-t.jpg",
               "mainText": "Teresita B. Mosenabre",
               "subText": "Settlement Head"
             }
@@ -192,12 +192,12 @@
               "subText": "Sales and Marketing Head"
             },
             {
-              "image": "/OurTeam/romanes-e.png",
+              "image": "/OurTeam/romanes-e.jpg",
               "mainText": "Erwin M. Romanes",
               "subText": "Licensed Salesman"
             },
             {
-              "image": "/OurTeam/latumbo-g.png",
+              "image": "/OurTeam/latumbo-g.jpg",
               "mainText": "Gerry C. Latumbo",
               "subText": "Licensed Salesman"
             }
@@ -238,7 +238,7 @@
             "isOpen": false
           },
           {
-            "question": "I have a stock certificer, how will i be able to sell them?",
+            "question": "I have a stock certificates, how will i be able to sell them?",
             "answer": "Stock certificates can be lodged or deposited into your account as long as the name appearing on the stock certificate is the same with your Venture account name. You may submit the duly endorsed stock certificates to our office located at 8/F STI Holdings Center, 6764 Ayala Avenue, Makati City. The certificates will then be submitted to the Transfer Agent for clearing then passed on to the Philippine Depository & Trust Corp (PDTC) for custody, which can take between a week to several weeks depending on the speed of the clearing process of these two organizations and if there are no discrepancies with the requirements. The Transfer Agent may also request for original signature cards and IDs to be submitted for verification purposes (signature cards are available from Venture Securities, Inc.).",
             "isOpen": false
           },
