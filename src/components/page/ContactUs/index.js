@@ -214,12 +214,6 @@ class ContactUs extends React.Component {
                                 </span>
                                 <p className='text-sm sm:text-base pt-1'>Traders : (02) 8891-9420 to 21</p>
                             </div>
-                            <div className='flex p-2'>
-                            <span className='p-1'>
-                                    <PhoneIcon className='h-[20px] w-[20px]' />
-                                </span>
-                                <p className='text-sm sm:text-base pt-1'>Trading Floor Contact Number: +63 02 8919420 to 21</p>
-                            </div>
                         </div>
                     </div>
                 </div>
