@@ -146,12 +146,12 @@
 
     /* Trading Personnel */
     .tradingpersonnel .grid-items {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         margin: 0 auto;
     }
 
     .tradingpersonnel .team-content {
-        width: 85% !important;
+        width: 55% !important;
         margin: 0 auto;
     }
 }
@@ -291,16 +291,16 @@
 
     /* Trading */ 
     .tradingpersonnel .item0 .team-content {
-        width: 95% !important;
+        width: 65% !important;
     }
 
     .tradingpersonnel .item1 .team-content {
-        width: 95% !important;
+        width: 65% !important;
     }
 
-    .tradingpersonnel .item2 .team-content {
+    /* .tradingpersonnel .item2 .team-content {
         width: 95% !important;
-    }
+    } */
 } 
 
 @media only screen and (max-width: 639px) {
