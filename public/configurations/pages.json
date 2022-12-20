@@ -100,12 +100,12 @@
               "subText": "Chairman"
             },
             {
-              "image": "/OurTeam/wilfred-s.png",
+              "image": "/OurTeam/wilfred-s.jpg",
               "mainText": "Wilfred S. Racadio",
               "subText": "President"
             },
             {
-              "image": "/OurTeam/yolanda-m.png",
+              "image": "/OurTeam/yolanda-m.jpg",
               "mainText": "Yolanda M. Bautista",
               "subText": "Treasurer"
             },
@@ -115,27 +115,27 @@
               "subText": "Corporate Secretary"
             },
             {
-              "image": "/OurTeam/agustin-j.png",
+              "image": "/OurTeam/agustin-j.jpg",
               "mainText": "Joseph Augustin L. Tanco",
               "subText": "Director"
             },
             {
-              "image": "/OurTeam/bautista-p.png",
+              "image": "/OurTeam/bautista-p.jpg",
               "mainText": "Paolo Martin M. Bautista",
               "subText": "Director"
             },
             {
-              "image": "/OurTeam/tanco-m.png",
+              "image": "/OurTeam/tanco-m.jpg",
               "mainText": "Martin K. Tanco",
               "subText": "Director"
             },
             {
-              "image": "/OurTeam/parker-s.png",
+              "image": "/OurTeam/parker-s.jpg",
               "mainText": "Stanley Parker Uy-Ong",
               "subText": "Independent Director"
             },
             {
-              "image": "/OurTeam/lumen-f.png",
+              "image": "/OurTeam/lumen-f.jpg",
               "mainText": "Francisco D. Lumen",
               "subText": "Independent Director"
             }
@@ -151,32 +151,32 @@
               "subText": "Chairman"
             },
             {
-              "image": "/OurTeam/wilfred-s.png",
+              "image": "/OurTeam/wilfred-s.jpg",
               "mainText": "Wilfred S. Racadio",
               "subText": "President"
             },
             {
-              "image": "/OurTeam/cabrera-a.png",
+              "image": "/OurTeam/cabrera-a.jpg",
               "mainText": "Arsenio C. Cabrera",
               "subText": "Corporate Secretary"
             },
             {
-              "image": "/OurTeam/yolanda-m.png",
+              "image": "/OurTeam/yolanda-m.jpg",
               "mainText": "Yolanda M. Bautista",
               "subText": "Treasurer"
             },
             {
-              "image": "/OurTeam/gonzales-r.png",
+              "image": "/OurTeam/gonzales-r.jpg",
               "mainText": "Regina Tanco-Gonzales",
               "subText": "Authorized Signatory"
             },
             {
-              "image": "/OurTeam/aguilar-a.png",
+              "image": "/OurTeam/aguilar-a.jpg",
               "mainText": "Adora M. Aguilar",
               "subText": "Associated Person"
             },
             {
-              "image": "/OurTeam/mosenabre-t.png",
+              "image": "/OurTeam/mosenabre-t.jpg",
               "mainText": "Teresita B. Mosenabre",
               "subText": "Settlement Head"
             }
@@ -192,13 +192,8 @@
               "subText": "Sales and Marketing Head"
             },
             {
-              "image": "/OurTeam/romanes-e.png",
+              "image": "/OurTeam/romanes-e.jpg",
               "mainText": "Erwin M. Romanes",
-              "subText": "Licensed Salesman"
-            },
-            {
-              "image": "/OurTeam/latumbo-g.png",
-              "mainText": "Gerry C. Latumbo",
               "subText": "Licensed Salesman"
             }
           ]

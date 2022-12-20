@@ -5,3 +5,7 @@
 .see-more-btn:hover {
     background: white;
 }
+
+.team-content {
+    border-color: rgba(146, 41, 31, 0.1);
+}

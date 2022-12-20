@@ -76,9 +76,6 @@ class ContactUs extends React.Component {
     };
 
     sendMessage = (e) => {
-        this.setState({
-            sending: true
-        })
         e.preventDefault();
         Promise.all([
             this.validateName(this.state.name.value),
@@ -86,6 +83,9 @@ class ContactUs extends React.Component {
             this.validateMessage(this.state.message.value)
         ]).then(() => {
             if (!this.state.name.errors && !this.state.email.errors && !this.state.message.errors) {
+                this.setState({
+                    sending: true
+                })
                 emailjs.sendForm(this.props.serviceId, this.props.templateId, '#eForm', this.props.publicId)
                     .then(res => {
                         console.log(res);
@@ -209,16 +209,10 @@ class ContactUs extends React.Component {
                                 <p className='text-sm sm:text-base pt-1'>Office Tel/Fax : (02) 8848-6505 : (02) 8848-2210</p>
                             </div>
                             <div className='flex p-2'>
-                            <span className='p-1'>
+                                <span className='p-1'>
                                     <PhoneIcon className='h-[20px] w-[20px]' />
                                 </span>
                                 <p className='text-sm sm:text-base pt-1'>Traders : (02) 8891-9420 to 21</p>
-                            </div>
-                            <div className='flex p-2'>
-                            <span className='p-1'>
-                                    <PhoneIcon className='h-[20px] w-[20px]' />
-                                </span>
-                                <p className='text-sm sm:text-base pt-1'>Trading Floor Contact Number: +63 02 8919420 to 21</p>
                             </div>
                         </div>
                     </div>
