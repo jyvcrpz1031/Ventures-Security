@@ -10,7 +10,7 @@ class TermsModal extends React.Component {
         super(props);
         this.state = {
             terms: [],
-            modalOpen: false
+            modalOpen: true
         }
     }
 

@@ -1,5 +1,5 @@
 import { Navigation, ScrollToTop } from './components/core';
-import { Terms } from './components/page';
+import { Announcement } from './components/page';
 import RenderPages from './route';
 import React from 'react';
 import './App.css';
@@ -17,7 +17,7 @@ function App() {
       <Navigation />
       <RenderPages />
       <ScrollToTop />
-      <Terms />
+      <Announcement />
     </div>
   );
 }
