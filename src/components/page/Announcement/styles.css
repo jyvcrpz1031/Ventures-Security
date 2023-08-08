@@ -1,0 +1,25 @@
+.infoText {
+  word-wrap: normal;
+  height: auto;
+  overflow: auto;
+}
+
+td,
+th {
+  border: 2px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.subheader {
+    width: 100%;
+}
+
+.close-btn {
+  background-color: #92291f;
+}
+
+.close-btn:hover {
+  background: white;
+  border: 1px solid black;
+}

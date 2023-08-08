@@ -6,3 +6,4 @@ export { default as OurTeam } from './OurTeam';
 export { default as Footer } from './Footer';
 export { default as FAQPage } from './FAQPage';
 export { default as Terms } from './TermsModal';
+export { default as Announcement } from './Announcement';
