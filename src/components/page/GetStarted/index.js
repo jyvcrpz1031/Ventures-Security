@@ -8,38 +8,55 @@ class GetStarted extends React.Component {
       individualJoint: [
         {
           description: "a. Customer Account Information Form (CAIF)",
-          link: "/CAIF_Individual-front.pdf",
+          link: "/individual/a_CAIF-Front.pdf",
+          filename: "Customer Account Information Form (CAIF).pdf"
         },
         {
           description: "b. Trading Agreement (Terms and Conditions)",
-          link: "/VSI-Trading-Agreement-Individual.pdf",
+          link: "/individual/b_Trading-Agreement.pdf",
+          filename: "Trading Agreement (Terms and Conditions).pdf"
         },
         {
           description: "c. Two (2) Specimen Signature Cards",
-          link: "/VSI_CAIF_Individual_Signature_Card.pdf",
+          link: "/individual/c_Signature-Cards.pdf",
+          filename: "Two (2) Specimen Signature Cards.pdf"
         },
         {
           description: "d. Client Consent Form (Data Privacy Act)",
-          link: "/VSI_Client_Consent_Form_Data_Privacy.pdf",
+          link: "/individual/d_Client-Consent-Form-Data-Privacy.pdf",
+          filename: "Client Consent Form (Data Privacy Act).pdf"
+        },
+        {
+          description: "e. Foreign Account Tax Compliance Act (FATCA) Disclosures (For US Citizen Only)",
+          link: "/individual/e_FATCA.pdf",
+          filename: "Foreign Account Tax Compliance Act (FATCA) Disclosures (For US Citizen Only).pdf"
         },
       ],
       corporate: [
         {
           description: "a. Corporate Account Information Form (CAIF)",
-          link: "/CAIF_Corporate-Account.pdf",
+          link: "/corporate/a_CAIF.pdf",
+          filename: "Corporate Account Information Form (CAIF).pdf"
         },
         {
           description: "b. Trading Agreement (Terms and Conditions)",
-          link: "/VSI-Trading-Agreement-Individual.pdf",
+          link: "/corporate/b_Trading-Agreement.pdf",
+          filename: "Trading Agreement (Terms and Conditions).pdf"
         },
         {
-          description:
-            "c. Two (2) Specimen Signature Cards verified by the Corporate Secretary",
-          link: "/VSI_CAIF_Corporate_Signature_Card.pdf",
+          description: "c. Two (2) Specimen Signature Cards verified by the Corporate Secretary",
+          link: "/corporate/c_Signature-Cards.pdf",
+          filename: "Two (2) Specimen Signature Cards verified by the Corporate Secretary.pdf"
         },
         {
           description: "d. Client Consent Form (Data Privacy Act)",
-          link: "/VSI_Client_Consent_Form_Data_Privacy.pdf",
+          link: "/corporate/d_Client-Consent-Form-Data-Privacy.pdf",
+          filename: "Client Consent Form (Data Privacy Act).pdf"
+        },
+        {
+          description: "e. Corporate Sworn Statement as to Existence & Non Existence of Beneficial Owner",
+          link: "/corporate/e_CSSE-NEBO.pdf",
+          filename: "Corporate Sworn Statement as to Existence & Non Existence of Beneficial Owner.pdf"
         },
       ],
     };
@@ -71,7 +88,7 @@ class GetStarted extends React.Component {
                   <a
                     className="individual-download"
                     href={`${process.env.PUBLIC_URL}${data?.link}`}
-                    download={`${process.env.PUBLIC_URL}${data?.link}`}
+                    download={data?.filename}
                   >
                     {data?.description}
                   </a>
@@ -122,8 +139,8 @@ class GetStarted extends React.Component {
                 <div key={i} className="individual-download-container">
                   <a
                     className="individual-download"
-                    href={data?.link}
-                    download={data?.link}
+                    href={`${process.env.PUBLIC_URL}${data?.link}`}
+                    download={data?.filename}
                   >
                     {data?.description}
                   </a>

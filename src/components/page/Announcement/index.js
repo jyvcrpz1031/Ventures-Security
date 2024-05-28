@@ -1,6 +1,6 @@
 import "./styles.css";
 import axios from "axios";
-import { Text, Modal } from "../../core";
+import { Modal } from "../../core";
 import { urlTerms } from "../../../variables";
 import { XIcon } from "@heroicons/react/solid";
 import React from "react";
@@ -10,7 +10,7 @@ class Announcement extends React.Component {
     super(props);
     this.state = {
       terms: [],
-      modalOpen: true,
+      modalOpen: false,
       showImage: true,
     };
   }

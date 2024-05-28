@@ -51,7 +51,7 @@ class RenderPages extends React.Component {
     renderPage = () => {
         const { pages } = this.state;
         return (
-            <div className="page-content">
+            <div className="page-content overflow-x-hidden">
                 {pages && pages.map((page, idx) => {
                     return (
                         <ComponentLoader
