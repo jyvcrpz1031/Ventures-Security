@@ -94,108 +94,129 @@
           "id": "boardofdirectors",
           "title": "Board of Directors",
           "list": [
-            {
-              "image": "/OurTeam/eusebio-h.png",
-              "mainText": "Eusebio H. Tanco",
-              "subText": "Chairman"
-            },
-            {
-              "image": "/OurTeam/wilfred-s.jpg",
-              "mainText": "Wilfred S. Racadio",
-              "subText": "President"
-            },
-            {
-              "image": "/OurTeam/yolanda-m.jpg",
-              "mainText": "Yolanda M. Bautista",
-              "subText": "Treasurer"
-            },
-            {
-              "image": "/OurTeam/cabrera-a.png",
-              "mainText": "Arsenio C. Cabrera",
-              "subText": "Corporate Secretary"
-            },
-            {
-              "image": "/OurTeam/agustin-j.jpg",
-              "mainText": "Joseph Augustin L. Tanco",
-              "subText": "Director"
-            },
-            {
-              "image": "/OurTeam/bautista-p.jpg",
-              "mainText": "Paolo Martin M. Bautista",
-              "subText": "Director"
-            },
-            {
-              "image": "/OurTeam/tanco-m.jpg",
-              "mainText": "Martin K. Tanco",
-              "subText": "Director"
-            },
-            {
-              "image": "/OurTeam/parker-s.jpg",
-              "mainText": "Stanley Parker Uy-Ong",
-              "subText": "Independent Director"
-            },
-            {
-              "image": "/OurTeam/lumen-f.jpg",
-              "mainText": "Francisco D. Lumen",
-              "subText": "Independent Director"
-            }
+            [
+              {
+                "image": "/OurTeam/eusebio-h.png",
+                "mainText": "Eusebio H. Tanco",
+                "subText": "Chairman"
+              },
+              {
+                "image": "/OurTeam/wilfred-s.jpg",
+                "mainText": "Wilfred S. Racadio",
+                "subText": "President"
+              }
+            ],
+            [
+              {
+                "image": "/OurTeam/yolanda-m.jpg",
+                "mainText": "Yolanda M. Bautista",
+                "subText": "Treasurer"
+              },
+              {
+                "image": "/OurTeam/cabrera-a.png",
+                "mainText": "Arsenio C. Cabrera",
+                "subText": "Corporate Secretary"
+              }
+            ],
+            [
+              {
+                "image": "/OurTeam/agustin-j.jpg",
+                "mainText": "Joseph Augustin L. Tanco",
+                "subText": "Director"
+              },
+              {
+                "image": "/OurTeam/bautista-p.jpg",
+                "mainText": "Paolo Martin M. Bautista",
+                "subText": "Director"
+              },
+              {
+                "image": "/OurTeam/wong-m.jpg",
+                "mainText": "Max Aaron Wong",
+                "subText": "Director"
+              },
+              {
+                "image": "/OurTeam/lau-m.png",
+                "mainText": "Lau Ka Ho",
+                "subText": "Director"
+              }
+            ],
+            [
+              {
+                "image": "/OurTeam/parker-s.jpg",
+                "mainText": "Stanley Parker Uy-Ong",
+                "subText": "Independent Director"
+              },
+              {
+                "image": "/OurTeam/lumen-f.jpg",
+                "mainText": "Francisco D. Lumen",
+                "subText": "Independent Director"
+              }
+            ]
           ]
         },
         {
           "id": "managementteam",
           "title": "Management Team",
           "list": [
-            {
-              "image": "/OurTeam/eusebio-h.png",
-              "mainText": "Eusebio H. Tanco",
-              "subText": "Chairman"
-            },
-            {
-              "image": "/OurTeam/wilfred-s.jpg",
-              "mainText": "Wilfred S. Racadio",
-              "subText": "President"
-            },
-            {
-              "image": "/OurTeam/cabrera-a.jpg",
-              "mainText": "Arsenio C. Cabrera",
-              "subText": "Corporate Secretary"
-            },
-            {
-              "image": "/OurTeam/yolanda-m.jpg",
-              "mainText": "Yolanda M. Bautista",
-              "subText": "Treasurer"
-            },
-            {
-              "image": "/OurTeam/gonzales-r.jpg",
-              "mainText": "Regina Tanco-Gonzales",
-              "subText": "Authorized Signatory"
-            },
-            {
-              "image": "/OurTeam/aguilar-a.jpg",
-              "mainText": "Adora M. Aguilar",
-              "subText": "Associated Person"
-            },
-            {
-              "image": "/OurTeam/mosenabre-t.jpg",
-              "mainText": "Teresita B. Mosenabre",
-              "subText": "Settlement Head"
-            }
+            [
+              {
+                "image": "/OurTeam/eusebio-h.png",
+                "mainText": "Eusebio H. Tanco",
+                "subText": "Chairman"
+              },
+              {
+                "image": "/OurTeam/wilfred-s.jpg",
+                "mainText": "Wilfred S. Racadio",
+                "subText": "President"
+              }
+            ],
+            [
+              {
+                "image": "/OurTeam/cabrera-a.jpg",
+                "mainText": "Arsenio C. Cabrera",
+                "subText": "Corporate Secretary"
+              },
+              {
+                "image": "/OurTeam/yolanda-m.jpg",
+                "mainText": "Yolanda M. Bautista",
+                "subText": "Treasurer"
+              },
+              {
+                "image": "/OurTeam/gonzales-r.jpg",
+                "mainText": "Regina Tanco-Gonzales",
+                "subText": "Authorized Signatory"
+              }
+            ],
+            [
+              {
+                "image": "/OurTeam/aguilar-a.jpg",
+                "mainText": "Adora M. Aguilar",
+                "subText": "Associated Person"
+              },
+              {
+                "image": "/OurTeam/mosenabre-t.jpg",
+                "mainText": "Teresita B. Mosenabre",
+                "subText": "Settlement Head"
+              }
+            ]
           ]
         },
         {
           "id": "tradingpersonnel",
           "title": "Trading Personnel",
           "list": [
-            {
-              "image": "/OurTeam/nebrida-s.jpg",
-              "mainText": "Shirley E. Nebrida",
-              "subText": "Sales and Marketing Head"
-            },
-            {
-              "image": "/OurTeam/romanes-e.jpg",
-              "mainText": "Erwin M. Romanes",
-              "subText": "Licensed Salesman"
-            }
+            [
+              {
+                "image": "/OurTeam/nebrida-s.jpg",
+                "mainText": "Shirley E. Nebrida",
+                "subText": "Sales and Marketing Head"
+              },
+              {
+                "image": "/OurTeam/romanes-e.jpg",
+                "mainText": "Erwin M. Romanes",
+                "subText": "Licensed Salesman"
+              }
+            ]
           ]
         }
       ]
