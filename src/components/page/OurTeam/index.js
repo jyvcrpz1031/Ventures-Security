@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+// import './styles.css';
 import { Card } from '../../core';
 
 class OurTeam extends React.Component {
@@ -44,8 +44,8 @@ class OurTeam extends React.Component {
         }
     }
 
-    showAllList = () => {
-        this.setState({ noOfItems: null });
+    showAllList = (len) => {
+        this.setState({ noOfItems: len });
     }
 
     render() {

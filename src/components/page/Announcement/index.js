@@ -46,15 +46,15 @@ class Announcement extends React.Component {
 
   renderImageFullScreen = (image) => {
     return (
-      <div class="container my-[15px]">
-        <div class="row">
-          <div class="col-sm-12">
-            <table class="table table-bordered table-responsive text-center w-full">
+      <div className="container my-[15px]">
+        <div className="row">
+          <div className="col-sm-12">
+            <table className="table table-bordered table-responsive text-center w-full">
               <thead>
                 <tr>
-                  <th rowspan="2">Transaction Date (T)</th>
-                  <th colspan="2">Settlement Date</th>
-                  <th rowspan="2">Remarks</th>
+                  <th rowSpan="2">Transaction Date (T)</th>
+                  <th colSpan="2">Settlement Date</th>
+                  <th rowSpan="2">Remarks</th>
                 </tr>
                 <tr>
                   <th>T+3</th>
@@ -64,7 +64,7 @@ class Announcement extends React.Component {
               <tbody id="rows">
                 <tr>
                   <td>Wednesday, August 23, 2023</td>
-                  <td colspan="2" rowSpan="2">
+                  <td colSpan="2" rowSpan="2">
                     August 29, 2023
                   </td>
                   <td>Last Trade under T+3 settlement</td>
