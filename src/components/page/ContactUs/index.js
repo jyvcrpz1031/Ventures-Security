@@ -171,7 +171,7 @@ class ContactUs extends React.Component {
                             <div className='location-map p-8 pb-1 pt-1 md:p-0 md:w-[500px] lg:w-[50%]'>
                                 <iframe
                                     title='googlemaps'
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3861.7347871315224!2d121.02480788844183!3d14.557153133646374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdfb49914c6c868db!2sGROW%20Vite%20Staffing%20Services%20Inc.!5e0!3m2!1sen!2sph!4v1652266728809!5m2!1sen!2sph"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6494.65321555693!2d121.02028300908113!3d14.556632082373262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90f7cb27fad%3A0x5a6853a9c654fd7e!2sSTI%20Holdings%20Center!5e0!3m2!1sen!2sph!4v1757328083941!5m2!1sen!2sph"
                                     height="450"
                                     style={{ border: '0', borderRadius: '5px' }}
                                     allowFullScreen=""
@@ -206,13 +206,13 @@ class ContactUs extends React.Component {
                                 <span className='p-1'>
                                     <PhoneIcon className='h-[20px] w-[20px]' />
                                 </span>
-                                <p className='text-sm sm:text-base pt-1'>Office Tel/Fax : (02) 8848-6505 : (02) 8848-2210</p>
+                                <p className='text-sm sm:text-base pt-1'>Office Tel/Fax : (02) 5310-5748 : (02) 5310-5744</p>
                             </div>
                             <div className='flex p-2'>
                                 <span className='p-1'>
                                     <PhoneIcon className='h-[20px] w-[20px]' />
                                 </span>
-                                <p className='text-sm sm:text-base pt-1'>Traders : (02) 8891-9420 to 21</p>
+                                <p className='text-sm sm:text-base pt-1'>Traders : (02) 5310-5749</p>
                             </div>
                         </div>
                     </div>

@@ -108,27 +108,12 @@
             ],
             [
               {
-                "image": "/OurTeam/yolanda-m.jpg",
-                "mainText": "Yolanda M. Bautista",
-                "subText": "Treasurer"
-              },
-              {
                 "image": "/OurTeam/cabrera-a.png",
                 "mainText": "Arsenio C. Cabrera",
                 "subText": "Corporate Secretary"
               }
             ],
             [
-              {
-                "image": "/OurTeam/agustin-j.jpg",
-                "mainText": "Joseph Augustin L. Tanco",
-                "subText": "Director"
-              },
-              {
-                "image": "/OurTeam/bautista-p.jpg",
-                "mainText": "Paolo Martin M. Bautista",
-                "subText": "Director"
-              },
               {
                 "image": "/OurTeam/wong-m.jpg",
                 "mainText": "Max Aaron Wong",
@@ -138,12 +123,17 @@
                 "image": "/OurTeam/lau-m.png",
                 "mainText": "Lau Ka Ho",
                 "subText": "Director"
+              },
+              {
+                "image": "/OurTeam/lumawig-d.jpg",
+                "mainText": "Danica R. Lumawig",
+                "subText": "Director"
               }
             ],
             [
               {
-                "image": "/OurTeam/parker-s.jpg",
-                "mainText": "Stanley Parker Uy-Ong",
+                "image": "/OurTeam/chung-c.jpg",
+                "mainText": "Cheung Siu Chung",
                 "subText": "Independent Director"
               },
               {
@@ -172,19 +162,19 @@
             ],
             [
               {
+                "image": "/OurTeam/bautista-p.jpg",
+                "mainText": "Paolo Martin M. Bautista",
+                "subText": "Treasurer"
+              },
+              {
                 "image": "/OurTeam/cabrera-a.jpg",
                 "mainText": "Arsenio C. Cabrera",
                 "subText": "Corporate Secretary"
               },
               {
-                "image": "/OurTeam/yolanda-m.jpg",
-                "mainText": "Yolanda M. Bautista",
-                "subText": "Treasurer"
-              },
-              {
-                "image": "/OurTeam/gonzales-r.jpg",
-                "mainText": "Regina Tanco-Gonzales",
-                "subText": "Authorized Signatory"
+                "image": "/OurTeam/lumawig-d.jpg",
+                "mainText": "Danica R. Lumawig",
+                "subText": "Director/Executive Manager"
               }
             ],
             [
@@ -194,9 +184,14 @@
                 "subText": "Associated Person"
               },
               {
+                "image": "/OurTeam/guillermo-m.jpg",
+                "mainText": "Maureen A. Guillermo",
+                "subText": "Settlement Manager"
+              },
+              {
                 "image": "/OurTeam/mosenabre-t.jpg",
                 "mainText": "Teresita B. Mosenabre",
-                "subText": "Settlement Head"
+                "subText": "Accounting Manager"
               }
             ]
           ]
